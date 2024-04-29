@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
+    /* Light grey background */
+}
+
+header {
+    background-color: #013369;
+    /* Deep blue, reminiscent of the NFL logo */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.banner {
+    background: url('football-field.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    /* Increased padding for better visibility */
+}
+
+.banner h2 {
+    margin: 0 0 20px;
+}
+
+.banner button {
+    padding: 10px 20px;
+    background-color: #d50a0a;
+    /* Vibrant red for buttons */
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+    /* Rounded corners for the buttons */
+}
+
+.about,
+.how-it-works,
+.testimonials {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #013369;
+    /* Deep blue border on the left for emphasis */
+}
+
+footer {
+    background-color: #013369;
+    /* Consistent with the header */
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
