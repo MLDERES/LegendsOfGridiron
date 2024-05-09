@@ -53,6 +53,5 @@ def do_work():
     full_ranking = pd.concat(all_rankings)
     full_ranking.to_csv(DATA_FOLDER/'full_ranking.csv', index=False)
     
-    
 if __name__ == '__main__':
     do_work()
