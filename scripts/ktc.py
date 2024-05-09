@@ -52,7 +52,7 @@ def do_work():
         ranking.to_csv(DATA_FOLDER/f'ranking_{page}.csv',index=False)
     full_ranking = pd.concat(all_rankings)
     full_ranking.to_csv(DATA_FOLDER/'full_ranking.csv', index=False)
-        
+    
     
 if __name__ == '__main__':
     do_work()
