@@ -10,6 +10,7 @@ BASE_URI = 'https://api.sleeper.app/v1/'
 PLAYERS_URI = BASE_URI + 'players/nfl'
 LEAGUE_URI = BASE_URI + 'league'
 LEAGUE_ID = os.getenv('SLEEPER_LEAGUE_ID')
+DRAFT_ID = os.getenv('DRAFT_ID_2024')
 
 # Get all players from sleeper
 def get_all_players():
@@ -43,5 +44,13 @@ def get_users_in_league():
         json.dump(users, file)
     return users
 
+# Get all picks in a draft
+def get_all_picks():
+    r = requests.get(f'{BASE_URI}/draft/{DRAFT_ID}/picks')
+    drafts = r.json()
+    with open(DATA_FOLDER/'draft_picks.json', 'w') as file:
+        json.dump(drafts, file)
+    return drafts
+
 if __name__ == '__main__':
-    get_users_in_league()
+   get_all_picks()
