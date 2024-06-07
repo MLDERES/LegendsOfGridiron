@@ -3,6 +3,7 @@ import requests
 from config import DATA_FOLDER
 from dotenv import load_dotenv
 import os
+import pandas as pd
 
 load_dotenv()
 
@@ -21,8 +22,8 @@ def get_all_players():
     return players
 
 # Get all rosters from sleeper
-def get_all_rosters():
-    r = requests.get(f'{LEAGUE_URI}/{LEAGUE_ID}/rosters')
+def get_all_rosters(leauge_id):
+    r = requests.get(f'{LEAGUE_URI}/{leauge_id}/rosters')
     rosters = r.json()
     with open(DATA_FOLDER/'rosters.json', 'w') as file:
         json.dump(rosters, file)
@@ -37,20 +38,29 @@ def get_roster_by_owner(owner):
     return None
 
 # Get users in a league
-def get_users_in_league():
-    r = requests.get(f'{LEAGUE_URI}/{LEAGUE_ID}/users')
+def get_users_in_league(leauge_id):
+    r = requests.get(f'{LEAGUE_URI}/{leauge_id}/users')
     users = r.json()
     with open(DATA_FOLDER/'users.json', 'w') as file:
         json.dump(users, file)
     return users
 
 # Get all picks in a draft
-def get_all_picks():
-    r = requests.get(f'{BASE_URI}/draft/{DRAFT_ID}/picks')
+def get_all_picks(draft_id):
+    r = requests.get(f'{BASE_URI}/draft/{draft_id}/picks')
     drafts = r.json()
     with open(DATA_FOLDER/'draft_picks.json', 'w') as file:
         json.dump(drafts, file)
-    return drafts
+    
+    # Load the draft picks data into a dataframe
+    draft_picks = pd.read_json(DATA_FOLDER/'draft_picks.json')
+
+    # Expand the metadata column into separate columns
+    draft_picks = pd.concat([draft_picks.drop(['metadata'], axis=1), draft_picks['metadata'].apply(pd.Series)], axis=1)
+    draft_picks['Player Fullname'] = draft_picks['first_name'] + ' ' + draft_picks['last_name']
+    draft_picks.to_csv(DATA_FOLDER/'draft_picks.csv', index=False)
+        
+    return draft_picks
 
 if __name__ == '__main__':
    get_all_picks()

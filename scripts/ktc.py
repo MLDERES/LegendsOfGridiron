@@ -51,6 +51,7 @@ def do_work():
         all_rankings.append(ranking)
         ranking.to_csv(DATA_FOLDER/f'ranking_{page}.csv',index=False)
     full_ranking = pd.concat(all_rankings)
+    full_ranking.rename(columns={'Name':'Player Fullname'}, inplace=True)
     full_ranking.to_csv(DATA_FOLDER/'full_ranking.csv', index=False)
     
 if __name__ == '__main__':
