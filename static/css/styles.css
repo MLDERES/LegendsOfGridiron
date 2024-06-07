@@ -3,12 +3,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: #e0e0e0;
-    /* Light grey background */
 }
 
 header {
     background-color: #013369;
-    /* Deep blue, reminiscent of the NFL logo */
     color: white;
     padding: 10px 20px;
     text-align: center;
@@ -39,40 +37,28 @@ nav ul li a {
     color: white;
     text-align: center;
     padding: 60px 20px;
-    /* Increased padding for better visibility */
 }
 
 .banner h2 {
     margin: 0 0 20px;
 }
 
-.banner button {
-    padding: 10px 20px;
-    background-color: #d50a0a;
-    /* Vibrant red for buttons */
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    color: white;
-    margin: 10px;
-    border-radius: 5px;
-    /* Rounded corners for the buttons */
-}
-
 .about,
-.how-it-works,
-.testimonials {
+.leagues,
+#overview,
+#scoring-system,
+#player-names,
+#playoff-system,
+#special-rules {
     margin: 20px;
     padding: 20px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-left: 5px solid #013369;
-    /* Deep blue border on the left for emphasis */
 }
 
 footer {
     background-color: #013369;
-    /* Consistent with the header */
     color: white;
     text-align: center;
     padding: 10px 20px;
