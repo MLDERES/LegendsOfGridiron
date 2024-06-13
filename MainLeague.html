@@ -10,143 +10,228 @@
 
 <body>
     <header>
-        <h1>Legends of the Gridiron - Main League</h1>
+        <div class="header-content">
+            <img src="static/img/LegendLogo.png" alt="League Logo" class="logo">
+            <div class="header-text">
+                <h1>Legends of the Gridiron</h1>
+                <h2>The Main dynasty league</h2>
+            </div>
+        </div>
         <nav>
             <ul>
                 <li><a href="#overview">Overview</a></li>
                 <li><a href="#scoring-system">Scoring System</a></li>
                 <li><a href="#player-names">Player Names & Divisions</a></li>
                 <li><a href="#playoff-system">Playoff System</a></li>
+                <li><a href="#rookiedrafts">Rookie Draft</a></li>
                 <li><a href="#special-rules">Special Rules</a></li>
             </ul>
         </nav>
     </header>
-
-    <section id="overview">
-        <h2>Overview</h2>
-        <p>This league is a dynasty league that started it all. At a $100 buy-in, teams play in divisions with division
-            winners getting paid, and runner ups also making the playoffs. The league concludes in Week 18 with an
-            All-Pro week where a virtual team is made up of players for across the three divisions for an epic
-            Head-Head-Head competition for the final payout!</p>
+    <main>
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>This league is a dynasty league that started it all. At a $100 buy-in, teams play in divisions with
+                division
+                winners getting paid, and runner ups also making the playoffs. The league concludes in Week 18 with an
+                All-Pro week where a virtual team is made up of players for across the three divisions for an epic
+                Head-Head-Head competition for the final payout!</p>
             <a href="https://sleeper.com/leagues/1060410179696533504">Sleeper League Link</a>
-    </section>
+        </section>
 
-    <section id="scoring-system">
-        <h2>Scoring System</h2>
-        <p>Our league uses a half-PPR (Points Per Reception) scoring system with the following rules:</p>
-        <ul>
-            <li>Passing Yards: 1 point per 25 yards</li>
-            <li>Passing Touchdowns: 4 points each</li>
-            <li>Interceptions Thrown: -2 points each</li>
-            <li>Pick 6 thrown: -3 points each</li>
-            <li>40+ Yard Completion Bonus: 1</li>
-            <li>40+ Yard Passing TD Bonus: 1</li>
-            <li>Rushing Yards: 1 point per 10 yards</li>
-            <li>Rushing First Down: 0.5 points each</li>
-            <li>Rushing Touchdowns: 6 points each</li>
-            <li>40+ Yard Rushing Bonus: 1</li>
-            <li>40+ Yard Rushing TD Bonus: 1</li>
-            <li>Receptions: 0.5 point each</li>
-            <li>Receiving Yards: 1 point per 10 yards</li>
-            <li>Receiving Touchdowns: 6 points each</li>
-            <li>Receiving First Down: 0.5 points each</li>
-            <li>40+ Yard Receiving Bonus: 1</li>
-            <li>40+ Yard Receiving TD Bonus: 1</li>
-            <li><b>Reception Bonus - TE: 0.5 points</b></li>
-            <li>Fumble: -1 points each</li>
-            <li>Fumbles Lost: -2 points each</li>
-        </ul>
-    </section>
+        <section id="scoring-system">
+            <h2>Scoring System</h2>
+            <p>Our league uses a half-PPR (Points Per Reception) scoring system with the following rules:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Scoring Category</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Passing Yards</td>
+                        <td>1 point per 25 yards</td>
+                    </tr>
+                    <tr>
+                        <td>Passing Touchdowns</td>
+                        <td>4 points each</td>
+                    </tr>
+                    <tr>
+                        <td>Interceptions Thrown</td>
+                        <td>-2 points each</td>
+                    </tr>
+                    <tr>
+                        <td>Pick 6 Thrown</td>
+                        <td>-3 points each</td>
+                    </tr>
+                    <tr class="rowHighlight">
+                        <td>40+ Yard Completion Bonus</td>
+                        <td>1 point</td>
+                    </tr>
+                    <tr class="rowHighlight">
+                        <td>40+ Yard Passing TD Bonus</td>
+                        <td>1 point</td>
+                    </tr>
+                    <tr>
+                        <td>Rushing Yards</td>
+                        <td>1 point per 10 yards</td>
+                    </tr>
+                    <tr>
+                        <td>Rushing First Down</td>
+                        <td>0.5 points each</td>
+                    </tr>
+                    <tr>
+                        <td>Rushing Touchdowns</td>
+                        <td>6 points each</td>
+                    </tr>
+                    <tr class="rowHighlight">
+                        <td>40+ Yard Rushing Bonus</td>
+                        <td>1 point</td>
+                    </tr>
+                    <tr class="rowHighlight">
+                        <td>40+ Yard Rushing TD Bonus</td>
+                        <td>1 point</td>
+                    </tr>
+                    <tr>
+                        <td>Receptions</td>
+                        <td>0.5 point each</td>
+                    </tr>
+                    <tr>
+                        <td>Receiving Yards</td>
+                        <td>1 point per 10 yards</td>
+                    </tr>
+                    <tr>
+                        <td>Receiving Touchdowns</td>
+                        <td>6 points each</td>
+                    </tr>
+                    <tr class="rowHighlight">
+                        <td>Receiving First Down</td>
+                        <td>0.5 points each</td>
+                    </tr>
+                    <tr class="rowHighlight">
+                        <td>40+ Yard Receiving Bonus</td>
+                        <td>1 point</td>
+                    </tr>
+                    <tr class="rowHighlight">
+                        <td>40+ Yard Receiving TD Bonus</td>
+                        <td>1 point</td>
+                    </tr>
+                    <tr class="rowHighlight">
+                        <td><b>Reception Bonus - TE</b></td>
+                        <td><b>0.5 points</b></td>
+                    </tr>
+                    <tr>
+                        <td>Fumble</td>
+                        <td>-1 point each</td>
+                    </tr>
+                    <tr>
+                        <td>Fumbles Lost</td>
+                        <td>-2 points each</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-    <section id="player-names">
-        <h2>Player Names & Divisions</h2>
-        <p>Divisions are reset each year. Winners of the toilet bowl (top 3 teams) become division captains and draft
-            their division mates the following year.</p>
-        <ul>
-            <li>
-                <h3>Landry's Legion</h3>
-                <ul>
-                    <li>John (ChiJV)</li>
-                    <li>Connor/Jack (April Showers=Maye Bowers)</li>
-                    <li>Tony (Waterboys)</li>
-                    <li>Paul (pfinken)</li>
-                </ul>
-            </li>
-            <li>
-                <h3>Lombardi Leapers</h3>
-                <ul>
-                    <li>Gary (Malice in the Midwest)</li>
-                    <li>Laurie (Keon Keepin On)</li>
-                    <li>Cory (Cactus Hack)</li>
-                    <li>Michael (I Love Brock&Roll)</li>
-                </ul>
-            </li>
-            <li>
-                <h3>Gibbs Grinders</h3>
-                <ul>
-                    <li>Spencer (West Coast Nonsense)</li>
-                    <li>Casey (the Bandit)</li>
-                    <li>Aled (Donkey Nuts)</li>
-                    <li>Nate (BKR BKR TD MAKER)</li>
-                </ul>
-            </li>
-        </ul>
-    </section>
+        <section id="player-names">
+            <h2>Player Names & Divisions</h2>
+            <p>Divisions are reset each year. Winners of the toilet bowl (top 3 teams) become division captains and
+                draft
+                their division mates the following year.</p>
+            <ul>
+                <li>
+                    <h3>Landry's Legion</h3>
+                    <ul>
+                        <li>John (ChiJV)</li>
+                        <li>Connor/Jack (April Showers=Maye Bowers)</li>
+                        <li>Tony (Waterboys)</li>
+                        <li>Paul (pfinken)</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Lombardi Leapers</h3>
+                    <ul>
+                        <li>Gary (Malice in the Midwest)</li>
+                        <li>Laurie (Keon Keepin On)</li>
+                        <li>Cory (Cactus Hack)</li>
+                        <li>Michael (I Love Brock&Roll)</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Gibbs Grinders</h3>
+                    <ul>
+                        <li>Spencer (West Coast Nonsense)</li>
+                        <li>Casey (the Bandit)</li>
+                        <li>Aled (Donkey Nuts)</li>
+                        <li>Nate (BKR BKR TD MAKER)</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
 
-    <section id="playoff-system">
-        <h2>Playoff System</h2>
-        <p>During the season each team will play the other teams at least once (division mates play each other twice).
-            Also each week, every team plays against the median score in the league. The top two players from each
-            division (by record) make the playoffs.</p>
-        <p>The other 6 teams fall to the consolation bracket where they will play to reset the divisions the following
-            year. Each of the top 3 teams in the consolation bracket will draft their league mates in a linear draft at
-            the conclusion of the season.</p>
-        <h2>Payouts</h2>
-        <p>There are several payouts at the end of the season:</p>
-        <ul>
-            <li>Division champs (3) at the end of regular season: $100 each</li>
-            <li>Following the playoffs:
-                <ul>
-                    <li>1st Place overall: $400</li>
-                    <li>2nd Place overall: $250</li>
-                    <li>3rd Place overall: $100</li>
-                </ul>
-            </li>
-            <li>Pro-Bowl winning division $200 (to be split amongst all teams in winning division)</li>
-        </ul>
-    </section>
+        <section id="playoff-system">
+            <h2>Playoff System</h2>
+            <p>During the season each team will play the other teams at least once (division mates play each other
+                twice).
+                Also each week, every team plays against the median score in the league. The top two players from each
+                division (by record) make the playoffs.</p>
+            <p>The other 6 teams fall to the consolation bracket where they will play to reset the divisions the
+                following
+                year. Each of the top 3 teams in the consolation bracket will draft their league mates in a linear draft
+                at
+                the conclusion of the season.</p>
+            <h2>Payouts</h2>
+            <p>There are several payouts at the end of the season:</p>
+            <ul>
+                <li>Division champs (3) at the end of regular season: $100 each</li>
+                <li>Following the playoffs:
+                    <ul>
+                        <li>1st Place overall: $400</li>
+                        <li>2nd Place overall: $250</li>
+                        <li>3rd Place overall: $100</li>
+                    </ul>
+                </li>
+                <li>Pro-Bowl winning division $200 (to be split amongst all teams in winning division)</li>
+            </ul>
+        </section>
 
-    <section id="rookiedrafts">
-        <h2>Rookie Draft</h2>
-        <p>A three-round rookie drafts will take place each year after the conclusion of the NFL draft.</p>
-        <p>Rookie draft order (linear, not a snake draft) is set using the reverse order of "Max Points For" throughout the regular season.
-            Keep in mind this might be different than how teams finish in the playoffs.</p>
-    </section>
-    <section id="special-rules">
-        <h2>Special Rules</h2>
-        <p>Our league has the following special rules:</p>
-        <ul>
-            <li>Trade Deadline: Week 10</li>
-            <li>Waiver Wire: Rolling waivers based on standings</li>
-            <li>Roster Limits: 1 QB, 2 RBs, 3 WRs, 1 TE, 2 FLEX, 1 SuperFlex (QB/TE/WR/RB),  15 bench spots</li>
-            <li>Injured Reserve: 2 IR spots</li>
-            <li>Taxi: 2 rookie taxi spots</li>
-        </ul>
-        <h3>Taxi Protocol</h3>
-        <p>You may place any Y1 rookies into the taxi spot. They can remain there until they have 2 years of NFL
-            experience, at which point they must be moved out of the taxi on the roster or dropped.</p>
-        <p>You can move players into the taxi up until the first week of the season. After this, once you remove a
-            player, they cannot go back into the taxi.</p>
-        <h3>Pro-Bowl</h3>
-        <p>The last week of the NFL season (Week 18) we'll have a special Head-Head-Head all-star mode where the three
-            divisions will build teams to play against each other.</p>
-        <p>Teams must consist of at least 2 skills players from each division team and will fill a standard roster. The
-            winning division will split a $200 cash prize between all the teams in the division.</p>
-    </section>
+        <section id="rookiedrafts" class="content-section">
+            <h2>Rookie Draft</h2>
+            <p>A three-round rookie drafts will take place each year after the conclusion of the NFL draft.</p>
+            <p>Rookie draft order (linear, not a snake draft) is set using the reverse order of "Max Points For"
+                throughout the regular season.
+                Keep in mind this might be different than how teams finish in the playoffs.</p>
+        </section>
 
-    <footer>
-        <p>&copy; 2024 Legends of the Gridiron</p>
-    </footer>
+        <section id="special-rules">
+            <h2>Special Rules</h2>
+            <p>Our league has the following special rules:</p>
+            <ul>
+                <li>Trade Deadline: Week 10</li>
+                <li>Waiver Wire: Rolling waivers based on standings</li>
+                <li>Roster Limits: 1 QB, 2 RBs, 3 WRs, 1 TE, 2 FLEX, 1 SuperFlex (QB/TE/WR/RB), 15 bench spots</li>
+                <li>Injured Reserve: 2 IR spots</li>
+                <li>Taxi: 2 rookie taxi spots</li>
+            </ul>
+            <h3>Taxi Protocol</h3>
+            <p>You may place any Y1 rookies into the taxi spot. They can remain there until they have 2 years of NFL
+                experience, at which point they must be moved out of the taxi on the roster or dropped.</p>
+            <p>You can move players into the taxi up until the first week of the season. After this, once you remove a
+                player, they cannot go back into the taxi.</p>
+            <h3>Pro-Bowl</h3>
+            <p>The last week of the NFL season (Week 18) we'll have a special Head-Head-Head all-star mode where the
+                three
+                divisions will build teams to play against each other.</p>
+            <p>Teams must consist of at least 2 skills players from each division team and will fill a standard roster.
+                The
+                winning division will split a $200 cash prize between all the teams in the division.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Legends of the Gridiron</p>
+        </footer>
+    </main>
 </body>
 
 </html>
