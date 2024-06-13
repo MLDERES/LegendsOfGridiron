@@ -3,6 +3,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -12,24 +15,64 @@ header {
     text-align: center;
 }
 
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content .logo {
+    height: 100px;
+    margin-right: 20px;
+}
+
+.header-content .header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
 header h1 {
     margin: 0;
+    font-size: 2.5em;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: normal;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+    margin: 0 10px;
 }
 
 nav ul li a {
+    display: block;
+    padding: 10px 15px;
     color: white;
+    background-color: #014f86;
+    border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #013369;
+}
+
+main {
+    flex: 1;
 }
 
 .banner {
@@ -62,7 +105,14 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 20px;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: auto;
+}
+
+.rowHighlight {
+    background-color: #FFFF00;
+    font-weight: bold;
+    color: #000000;
 }
