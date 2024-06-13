@@ -33,6 +33,11 @@ header {
     color: white;
 }
 
+.header-content .large-logo {
+    height: 300px;
+    /* Adjust height for larger logo */
+}
+
 header h1 {
     margin: 0;
     font-size: 2.5em;
