@@ -11,7 +11,7 @@ body {
 header {
     background-color: #013369;
     color: white;
-    padding: 10px 20px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -19,34 +19,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.header-content .logo {
-    height: 100px;
-    margin-right: 20px;
-}
-
-.header-content .header-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
+    flex-wrap: wrap;
 }
 
 .header-content .large-logo {
-    height: 300px;
+    height: 200px;
     /* Adjust height for larger logo */
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-header h2 {
-    margin: 0;
-    font-size: 1.5em;
-    font-weight: normal;
+    max-width: 100%;
+    /* Ensure the logo is responsive */
 }
 
 nav ul {
@@ -54,6 +34,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 10px 0 0;
 }
 
@@ -66,7 +47,7 @@ nav ul li a {
     padding: 10px 15px;
     color: white;
     background-color: #014f86;
-    border-radius: 5px;
+    border-radius: 5px ;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s;
@@ -89,39 +70,17 @@ main {
 
 .banner h2 {
     margin: 0 0 20px;
+    color: #ffcc00;
+    /* Change this color as desired */
 }
 
 .about,
-.leagues,
-#overview,
-#scoring-system,
-#player-names,
-#playoff-system,
-#rookiedrafts,
-#special-rules {
+.leagues {
     margin: 20px;
     padding: 20px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-left: 5px solid #013369;
-}
-
-#scoring-system table {
-    width: 80%;
-    /* Adjust the width as needed */
-    margin: 0 auto;
-    border-collapse: collapse;
-}
-
-#scoring-system table th,
-#scoring-system table td {
-    padding: 12px;
-    border: 1px solid #ddd;
-    text-align: left;
-}
-
-#scoring-system table th {
-    background-color: #f2f2f2;
 }
 
 footer {
@@ -135,8 +94,22 @@ footer {
     margin-top: auto;
 }
 
-.rowHighlight {
-    background-color: #FFFF00;
-    font-weight: bold;
-    color: #000000;
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .banner {
+        padding: 40px 20px;
+    }
 }
