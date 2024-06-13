@@ -29,6 +29,29 @@ header {
     /* Ensure the logo is responsive */
 }
 
+.header-content .logo {
+    height: 100px;
+    margin-right: 20px;
+}
+
+.header-content .header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -38,9 +61,9 @@ nav ul {
     margin: 10px 0 0;
 }
 
-nav ul li {
-    margin: 0 10px;
-}
+nav ul li  {
+     margin: 0 10px;
+ }
 
 nav ul li a {
     display: block;
@@ -75,7 +98,13 @@ main {
 }
 
 .about,
-.leagues {
+.leagues,
+.content-section,
+#overview,
+#scoring-system,
+#player-names,
+#playoff-system,
+#special-rules {
     margin: 20px;
     padding: 20px;
     background-color: white;
@@ -104,6 +133,11 @@ main {
     height: auto;
 }
 
+.rowHighlight {
+    background-color: #FFFF00;
+    font-weight: bold;
+    color: #000000;
+}
 footer {
     background-color: #013369;
     color: white;
