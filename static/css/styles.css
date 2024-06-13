@@ -47,7 +47,7 @@ nav ul li a {
     padding: 10px 15px;
     color: white;
     background-color: #014f86;
-    border-radius: 5px ;
+    border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s;
@@ -83,6 +83,27 @@ main {
     border-left: 5px solid #013369;
 }
 
+.leagues ul {
+    list-style: none;
+    padding: 0;
+}
+
+.leagues ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.leagues ul li a {
+    margin-right: 20px;
+}
+
+.leagues ul li img.thumbnail {
+    width: 100px;
+    /* Adjust width as needed */
+    height: auto;
+}
+
 footer {
     background-color: #013369;
     color: white;
@@ -111,5 +132,14 @@ footer {
 
     .banner {
         padding: 40px 20px;
+    }
+
+    .leagues ul li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .leagues ul li a {
+        margin-bottom: 10px;
     }
 }
