@@ -14,11 +14,12 @@ LEAGUE_ID = os.getenv('SLEEPER_LEAGUE_ID')
 DRAFT_ID = os.getenv('DRAFT_ID_2024')
 
 # Get all players from sleeper
-def get_all_players():
+def get_all_players(save=False):
     r = requests.get('https://api.sleeper.app/v1/players/nfl')
     players = r.json()
-    with open(DATA_FOLDER/'players.json', 'w') as file:
-        json.dump(players, file)
+    if save:
+        with open(DATA_FOLDER/'players.json', 'w') as file:
+            json.dump(players, file)
     return players
 
 # Get all rosters from sleeper
@@ -38,12 +39,24 @@ def get_roster_by_owner(owner):
     return None
 
 # Get users in a league
-def get_users_in_league(leauge_id):
-    r = requests.get(f'{LEAGUE_URI}/{leauge_id}/users')
+def get_users_in_league(league_id, save = False):
+    r = requests.get(f'{LEAGUE_URI}/{league_id}/users')
     users = r.json()
-    with open(DATA_FOLDER/'users.json', 'w') as file:
-        json.dump(users, file)
-    return users
+    if save: 
+        with open(DATA_FOLDER/'users.json', 'w') as file:
+            json.dump(users, file)
+        users_df = pd.read_json(DATA_FOLDER/'users.json')
+    else:
+        users_df = pd.DataFrame(users)
+    # Expand the metadata column into separate columns
+    users_df = pd.concat([users_df.drop(['metadata'], axis=1), users_df['metadata'].apply(pd.Series)], axis=1)
+    
+    # Remove unnecessary columns
+    users_df = users_df.drop(columns=['settings','is_bot','user_message_pn', 'transaction_waiver',
+       'transaction_trade', 'transaction_free_agent',
+       'transaction_commissioner', 'trade_block_pn','player_nickname_update', 'player_like_pn', 'mention_pn',
+       'mascot_message', 'league_report_pn', 'archived', 'allow_pn','avatar'],errors='ignore')
+    return users_df
 
 # Get all picks in a draft
 def get_all_picks(draft_id):

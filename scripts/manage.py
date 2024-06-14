@@ -1,6 +1,7 @@
 import pandas as pd
 from config import DATA_FOLDER
 import json
+import sqlite3
 
 # Determine the ADP to draft position for each player in the database
 
@@ -16,10 +17,11 @@ def correlate_data():
     
     print(draft_picks.columns)
 
-def clean_player_data():
-    # Read the JSON data from a file
-    with open(DATA_FOLDER/'players.json', 'r') as file:
-        data = json.load(file)
+def clean_player_data(data):
+    if data is None:
+        # Read the JSON data from a file
+        with open(DATA_FOLDER/'players.json', 'r') as file:
+            data = json.load(file)
 
     # Convert the JSON data to a DataFrame
     df = pd.DataFrame.from_dict(data, orient='index')
@@ -29,12 +31,14 @@ def clean_player_data():
 
     # Filter the DataFrame to include only players with positions WR, QB, RB, TE
     filtered_df = df[df['position'].isin(['WR', 'QB', 'RB', 'TE'])]
-
-    # Save the filtered DataFrame to a CSV file
-    filtered_df.to_csv(DATA_FOLDER/'nfl_players_filtered.csv', index=False)
-
-    # Print a success message
-    print("Filtered data has been saved to 'nfl_players_filtered.csv'.")
+    # Drop unnecessary columns
+    filtered_df = filtered_df.drop(columns=['injury_status','birth_country',
+       'birth_city', 'injury_start_date', 'birth_state','competitions','rotowire_id', 'sportradar_id', 'injury_notes',
+       'yahoo_id', 'news_updated', 'injury_body_part',
+       'metadata','high_school'])
+    # Set the index to player_id
+    filtered_df = filtered_df.set_index('player_id')
+    return filtered_df
 
 # After getting the data from sleeper (the users in the league)
 def clean_league_user_data(league_user_json_data):
@@ -49,4 +53,16 @@ def clean_league_user_data(league_user_json_data):
     
     return filtered_df
 
-    
+def update_db_with_players(player_df):
+    # Create a connection to the database
+    conn = sqlite3.connect('../data/league_db.db')
+
+    # Insert the data into the database
+    player_df.to_sql('players', conn, if_exists='replace', index=True)
+
+def weekly_maintenance():
+    # Get player data
+    # Insert player data into the database
+    # Get all the coaches in the leagues
+    # Insert coaches into the database
+    pass
