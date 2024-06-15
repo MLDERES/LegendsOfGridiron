@@ -23,12 +23,14 @@ def get_all_players(save=False):
     return players
 
 # Get all rosters from sleeper
-def get_all_rosters(leauge_id):
-    r = requests.get(f'{LEAGUE_URI}/{leauge_id}/rosters')
+def get_all_rosters(league_id, save=False):
+    r = requests.get(f'{LEAGUE_URI}/{league_id}/rosters')
     rosters = r.json()
-    with open(DATA_FOLDER/'rosters.json', 'w') as file:
-        json.dump(rosters, file)
-    return rosters
+    if save:
+        with open(DATA_FOLDER/'rosters.json', 'w') as file:
+            json.dump(rosters, file)
+    rosters_df = pd.DataFrame(rosters)
+    return rosters_df
 
 # Get roster by owner from sleeper
 def get_roster_by_owner(owner):
