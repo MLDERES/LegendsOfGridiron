@@ -15,7 +15,6 @@ Patrick Mahomes,Texas Tech,7.0,KC,QB,ChiJV,6,MainLeague
 Jamaal Williams,BYU,7.0,NO,RB,ChiJV,12,MainLeague
 DJ Moore,Maryland,6.0,CHI,WR,ChiJV,7,MainLeague
 Dallas Goedert,South Dakota State,6.0,PHI,TE,ChiJV,5,MainLeague
-Donovan Peoples-Jones,Michigan,4.0,DET,WR,ChiJV,5,MainLeague
 Darnell Mooney,Tulane,4.0,ATL,WR,ChiJV,12,MainLeague
 DeVonta Smith,Alabama,3.0,PHI,WR,ChiJV,5,MainLeague
 Cade Otton,Washington,2.0,TB,TE,ChiJV,11,MainLeague
@@ -26,6 +25,7 @@ Israel Abanikanda,Pittsburgh,1.0,NYJ,RB,ChiJV,12,MainLeague
 Puka Nacua,BYU,1.0,LAR,WR,ChiJV,6,MainLeague
 Aaron Rodgers,California,19.0,NYJ,QB,ChiJV,12,MainLeague
 Eric Gray,Oklahoma,1.0,NYG,RB,gpeisert1,11,MainLeague
+Joe Milton,Tennessee,0.0,NE,QB,gpeisert1,14,MainLeague
 Jayden Daniels,LSU,0.0,WAS,QB,gpeisert1,14,MainLeague
 Ray Davis,Kentucky,0.0,BUF,RB,gpeisert1,12,MainLeague
 Trey Benson,Florida State,0.0,ARI,RB,gpeisert1,11,MainLeague
@@ -34,15 +34,14 @@ Jaylen Wright,Tennessee,0.0,MIA,RB,gpeisert1,6,MainLeague
 Javon Baker,UCF,0.0,NE,WR,gpeisert1,14,MainLeague
 Kirk Cousins,Michigan State,12.0,ATL,QB,gpeisert1,12,MainLeague
 Daijun Edwards,Georgia,0.0,PIT,RB,gpeisert1,9,MainLeague
+Mason Tipton,Yale,0.0,NO,WR,gpeisert1,12,MainLeague
 Zach Ertz,Stanford,11.0,WAS,TE,gpeisert1,14,MainLeague
-Josh Reynolds,Texas A&M,7.0,DEN,WR,gpeisert1,14,MainLeague
 Aaron Jones,UTEP,7.0,MIN,RB,gpeisert1,6,MainLeague
 Hayden Hurst,South Carolina,6.0,LAC,TE,gpeisert1,5,MainLeague
 Mike Gesicki,Penn State,6.0,CIN,TE,gpeisert1,12,MainLeague
 Will Dissly,Washington,6.0,LAC,TE,gpeisert1,5,MainLeague
 DK Metcalf,Ole Miss,5.0,SEA,WR,gpeisert1,10,MainLeague
 Diontae Johnson,Toledo,5.0,CAR,WR,gpeisert1,11,MainLeague
-Darius Slayton,Auburn,5.0,NYG,WR,gpeisert1,11,MainLeague
 Jalen Hurts,Oklahoma,4.0,PHI,QB,gpeisert1,5,MainLeague
 Antonio Gibson,Memphis,4.0,NE,RB,gpeisert1,14,MainLeague
 Juwan Johnson,Oregon,4.0,NO,TE,gpeisert1,12,MainLeague
@@ -53,7 +52,6 @@ Jahan Dotson,Penn State,2.0,WAS,WR,gpeisert1,14,MainLeague
 Trey McBride,Colorado State,2.0,ARI,TE,gpeisert1,11,MainLeague
 James Cook,Georgia,2.0,BUF,RB,gpeisert1,12,MainLeague
 Hendon Hooker,Tennessee,1.0,DET,QB,gpeisert1,5,MainLeague
-Davis Allen,Clemson,1.0,LAR,TE,WestCoastNonsense,6,MainLeague
 Chris Rodriguez,Kentucky,1.0,WAS,RB,WestCoastNonsense,14,MainLeague
 A.T. Perry,Wake Forest,1.0,NO,WR,WestCoastNonsense,12,MainLeague
 Johnny Wilson,Florida State,0.0,PHI,WR,WestCoastNonsense,5,MainLeague
@@ -71,6 +69,7 @@ Greg Dortch,Wake Forest,5.0,ARI,WR,WestCoastNonsense,11,MainLeague
 Colby Parkinson,Stanford,4.0,LAR,TE,WestCoastNonsense,6,MainLeague
 Rico Dowdle,South Carolina,4.0,DAL,RB,WestCoastNonsense,7,MainLeague
 Nico Collins,Michigan,3.0,HOU,WR,WestCoastNonsense,14,MainLeague
+Jalen Tolbert,South Alabama,2.0,DAL,WR,WestCoastNonsense,7,MainLeague
 Khalil Shakir,Boise State,2.0,BUF,WR,WestCoastNonsense,12,MainLeague
 Zamir White,Georgia,2.0,LV,RB,WestCoastNonsense,10,MainLeague
 Jerome Ford,Cincinnati,2.0,CLE,RB,WestCoastNonsense,10,MainLeague
@@ -149,20 +148,20 @@ Brandin Cooks,Oregon State,10.0,DAL,WR,theBandit216,7,MainLeague
 Tyreek Hill,West Alabama,8.0,MIA,WR,theBandit216,6,MainLeague
 Joe Mixon,Oklahoma,7.0,HOU,RB,theBandit216,14,MainLeague
 David Njoku,Miami (FL),7.0,CLE,TE,theBandit216,10,MainLeague
-JuJu Smith-Schuster,USC,7.0,NE,WR,theBandit216,14,MainLeague
 D'Onta Foreman,Texas,7.0,CLE,RB,theBandit216,10,MainLeague
 Samaje Perine,Oklahoma,7.0,DEN,RB,theBandit216,14,MainLeague
 Robert Tonyan,Indiana State,7.0,MIN,TE,theBandit216,6,MainLeague
 Austin Ekeler,Western Colorado,7.0,WAS,RB,theBandit216,14,MainLeague
 Nick Chubb,Georgia,6.0,CLE,RB,theBandit216,10,MainLeague
-Michael Gallup,Colorado State,6.0,LV,WR,theBandit216,10,MainLeague
 T.J. Hockenson,Iowa,5.0,MIN,TE,theBandit216,6,MainLeague
 Terry McLaurin,Ohio State,5.0,WAS,WR,theBandit216,14,MainLeague
 Jake Browning,Washington,5.0,CIN,QB,theBandit216,12,MainLeague
 Justin Herbert,Oregon,4.0,LAC,QB,theBandit216,5,MainLeague
+Collin Johnson,Texas,4.0,CHI,WR,theBandit216,7,MainLeague
 Travis Etienne,Clemson,3.0,JAX,RB,theBandit216,12,MainLeague
 Justin Fields,Ohio State,3.0,PIT,QB,theBandit216,9,MainLeague
 Treylon Burks,Arkansas,2.0,TEN,WR,theBandit216,5,MainLeague
+Jalen Nailor,Michigan State,2.0,MIN,WR,theBandit216,6,MainLeague
 Aidan O'Connell,Purdue,1.0,LV,QB,tford51,10,MainLeague
 Ja'Tavion Sanders,Texas,0.0,CAR,TE,tford51,11,MainLeague
 Dak Prescott,Mississippi State,8.0,DAL,QB,tford51,7,MainLeague
@@ -204,17 +203,17 @@ Mark Andrews,Oklahoma,6.0,BAL,TE,ProfessorD,14,MainLeague
 Justice Hill,Oklahoma State,5.0,BAL,RB,ProfessorD,14,MainLeague
 Brandon Aiyuk,Arizona State,4.0,SF,WR,ProfessorD,9,MainLeague
 Jordan Love,Utah State,4.0,GB,QB,ProfessorD,10,MainLeague
-Jauan Jennings,Tennessee,4.0,SF,WR,ProfessorD,9,MainLeague
 Davis Mills,Stanford,3.0,HOU,QB,ProfessorD,14,MainLeague
 Javonte Williams,North Carolina,3.0,DEN,RB,ProfessorD,14,MainLeague
 Michael Carter,North Carolina,3.0,ARI,RB,ProfessorD,11,MainLeague
 Noah Gray,Duke,3.0,KC,TE,ProfessorD,6,MainLeague
 Drake London,USC,2.0,ATL,WR,ProfessorD,12,MainLeague
-Kenny Pickett,Pittsburgh,2.0,PHI,QB,ProfessorD,5,MainLeague
+Calvin Austin,Memphis,2.0,PIT,WR,ProfessorD,9,MainLeague
 Brock Purdy,Iowa State,2.0,SF,QB,ProfessorD,9,MainLeague
 Bo Melton,Rutgers,2.0,GB,WR,ProfessorD,10,MainLeague
 Jaylen Warren,Oklahoma State,2.0,PIT,RB,ProfessorD,9,MainLeague
 Tyrod Taylor,Virginia Tech,13.0,NYJ,QB,ProfessorD,12,MainLeague
+Jordan Mason,Georgia Tech,2.0,SF,RB,ProfessorD,9,MainLeague
 Tyjae Spears,Tulane,1.0,TEN,RB,ProfessorD,5,MainLeague
 Keaton Mitchell,East Carolina,1.0,BAL,RB,ProfessorD,14,MainLeague
 Kendre Miller,TCU,1.0,NO,RB,ProfessorD,12,MainLeague
@@ -231,11 +230,11 @@ Tyler Boyd,Pittsburgh,8.0,TEN,WR,aledo,5,MainLeague
 Deshaun Watson,Clemson,7.0,CLE,QB,aledo,10,MainLeague
 Dalton Schultz,Stanford,6.0,HOU,TE,aledo,14,MainLeague
 Courtland Sutton,SMU,6.0,DEN,WR,aledo,14,MainLeague
+Ray-Ray McCloud,Clemson,6.0,ATL,WR,aledo,12,MainLeague
 Alexander Mattison,Boise State,5.0,LV,RB,aledo,10,MainLeague
 Gardner Minshew,Washington State,5.0,LV,QB,aledo,10,MainLeague
 Devin Singletary,Florida Atlantic,5.0,NYG,RB,aledo,11,MainLeague
 Justin Jefferson,LSU,4.0,MIN,WR,aledo,6,MainLeague
-Jaret Patterson,Buffalo,3.0,LAC,RB,aledo,5,MainLeague
 Kyle Pitts,Florida,3.0,ATL,TE,aledo,12,MainLeague
 Brian Robinson,Alabama,2.0,WAS,RB,aledo,14,MainLeague
 Christian Watson,North Dakota State,2.0,GB,WR,aledo,10,MainLeague
@@ -260,7 +259,7 @@ Dawson Knox,Ole Miss,5.0,BUF,TE,plfinken,12,MainLeague
 Jakobi Meyers,North Carolina State,5.0,LV,WR,plfinken,10,MainLeague
 Tony Pollard,Memphis,5.0,TEN,RB,plfinken,5,MainLeague
 Jerry Jeudy,Alabama,4.0,CLE,WR,plfinken,10,MainLeague
-Cam Akers,Florida State,4.0,MIN,RB,plfinken,6,MainLeague
+Cam Akers,Florida State,4.0,HOU,RB,plfinken,14,MainLeague
 Trevor Lawrence,Clemson,3.0,JAX,QB,plfinken,12,MainLeague
 Amon-Ra St. Brown,USC,3.0,DET,WR,plfinken,5,MainLeague
 Khalil Herbert,Virginia Tech,3.0,CHI,RB,plfinken,7,MainLeague
@@ -413,7 +412,6 @@ Davante Adams,Fresno State,10.0,LV,WR,theBandit216,10,BB1
 Brandin Cooks,Oregon State,10.0,DAL,WR,theBandit216,7,BB1
 Tyler Boyd,Pittsburgh,8.0,TEN,WR,theBandit216,5,BB1
 David Njoku,Miami (FL),7.0,CLE,TE,theBandit216,10,BB1
-JuJu Smith-Schuster,USC,7.0,NE,WR,theBandit216,14,BB1
 Patrick Mahomes,Texas Tech,7.0,KC,QB,theBandit216,6,BB1
 D'Onta Foreman,Texas,7.0,CLE,RB,theBandit216,10,BB1
 Josh Reynolds,Texas A&M,7.0,DEN,WR,theBandit216,14,BB1
@@ -513,7 +511,6 @@ Odell Beckham,LSU,10.0,MIA,WR,ConorDeLa,6,BB1
 Jameis Winston,Florida State,9.0,CLE,QB,ConorDeLa,10,BB1
 Joshua Dobbs,Tennessee,7.0,SF,QB,ConorDeLa,9,BB1
 Sam Darnold,USC,6.0,MIN,QB,ConorDeLa,6,BB1
-Michael Gallup,Colorado State,6.0,LV,WR,ConorDeLa,10,BB1
 T.J. Hockenson,Iowa,5.0,MIN,TE,ConorDeLa,6,BB1
 Hollywood Brown,Oklahoma,5.0,KC,WR,ConorDeLa,6,BB1
 A.J. Brown,Ole Miss,5.0,PHI,WR,ConorDeLa,5,BB1
@@ -760,7 +757,6 @@ Keon Coleman,Florida State,0.0,BUF,WR,ConorDeLa,12,BB2
 Dak Prescott,Mississippi State,8.0,DAL,QB,ConorDeLa,7,BB2
 Joshua Dobbs,Tennessee,7.0,SF,QB,ConorDeLa,9,BB2
 Dalton Schultz,Stanford,6.0,HOU,TE,ConorDeLa,14,BB2
-Michael Gallup,Colorado State,6.0,LV,WR,ConorDeLa,10,BB2
 Gardner Minshew,Washington State,5.0,LV,QB,ConorDeLa,10,BB2
 Justin Jefferson,LSU,4.0,MIN,WR,ConorDeLa,6,BB2
 Clyde Edwards-Helaire,LSU,4.0,KC,RB,ConorDeLa,6,BB2
@@ -905,7 +901,6 @@ Odell Beckham,LSU,10.0,MIA,WR,aledo,6,BB2
 Jameis Winston,Florida State,9.0,CLE,QB,aledo,10,BB2
 Derrick Henry,Alabama,8.0,BAL,RB,aledo,14,BB2
 Deshaun Watson,Clemson,7.0,CLE,QB,aledo,10,BB2
-JuJu Smith-Schuster,USC,7.0,NE,WR,aledo,14,BB2
 Courtland Sutton,SMU,6.0,DEN,WR,aledo,14,BB2
 Gus Edwards,Rutgers,6.0,LAC,RB,aledo,5,BB2
 Tony Pollard,Memphis,5.0,TEN,RB,aledo,5,BB2
@@ -1144,7 +1139,6 @@ Jayden Daniels,LSU,0.0,WAS,QB,JeffMyers,14,BB3
 Tyrone Tracy,Purdue,0.0,NYG,RB,JeffMyers,11,BB3
 Kirk Cousins,Michigan State,12.0,ATL,QB,JeffMyers,12,BB3
 DeAndre Hopkins,Clemson,11.0,TEN,WR,JeffMyers,5,BB3
-Logan Thomas,Virginia Tech,10.0,SF,TE,JeffMyers,9,BB3
 Joe Mixon,Oklahoma,7.0,HOU,RB,JeffMyers,14,BB3
 Noah Fant,Iowa,5.0,SEA,TE,JeffMyers,10,BB3
 Justin Jefferson,LSU,4.0,MIN,WR,JeffMyers,6,BB3
@@ -1270,7 +1264,6 @@ Brian Thomas,LSU,0.0,JAX,WR,ConorDeLa,12,BB4
 Jared Goff,California,8.0,DET,QB,ConorDeLa,5,BB4
 Joshua Dobbs,Tennessee,7.0,SF,QB,ConorDeLa,9,BB4
 Kendrick Bourne,Eastern Washington,7.0,NE,WR,ConorDeLa,14,BB4
-Michael Gallup,Colorado State,6.0,LV,WR,ConorDeLa,10,BB4
 D'Andre Swift,Georgia,4.0,CHI,RB,ConorDeLa,7,BB4
 Clyde Edwards-Helaire,LSU,4.0,KC,RB,ConorDeLa,6,BB4
 Jaylen Waddle,Alabama,3.0,MIA,WR,ConorDeLa,6,BB4
@@ -1389,7 +1382,6 @@ Sam LaPorta,Iowa,1.0,DET,TE,JeffMyers,5,BB4
 Jayden Daniels,LSU,0.0,WAS,QB,JeffMyers,14,BB4
 Ray Davis,Kentucky,0.0,BUF,RB,JeffMyers,12,BB4
 Kimani Vidal,Troy,0.0,LAC,RB,JeffMyers,5,BB4
-Logan Thomas,Virginia Tech,10.0,SF,TE,JeffMyers,9,BB4
 Jameis Winston,Florida State,9.0,CLE,QB,JeffMyers,10,BB4
 Marcus Mariota,Oregon,9.0,WAS,QB,JeffMyers,14,BB4
 Amari Cooper,Alabama,9.0,CLE,WR,JeffMyers,10,BB4
@@ -1671,7 +1663,6 @@ Joe Mixon,Oklahoma,7.0,HOU,RB,tford51,14,BB5
 David Njoku,Miami (FL),7.0,CLE,TE,tford51,10,BB5
 Taysom Hill,BYU,7.0,NO,TE,tford51,12,BB5
 Sam Darnold,USC,6.0,MIN,QB,tford51,6,BB5
-Michael Gallup,Colorado State,6.0,LV,WR,tford51,10,BB5
 Courtland Sutton,SMU,6.0,DEN,WR,tford51,14,BB5
 Kyler Murray,Oklahoma,5.0,ARI,QB,tford51,11,BB5
 Drew Lock,Missouri,5.0,NYG,QB,tford51,11,BB5
@@ -1693,7 +1684,6 @@ Luke McCaffrey,Rice,0.0,WAS,WR,koolaid403,14,BB5
 Joe Flacco,Delaware,16.0,IND,QB,koolaid403,14,BB5
 Amari Cooper,Alabama,9.0,CLE,WR,koolaid403,10,BB5
 Ezekiel Elliott,Ohio State,8.0,DAL,RB,koolaid403,7,BB5
-JuJu Smith-Schuster,USC,7.0,NE,WR,koolaid403,14,BB5
 George Kittle,Iowa,7.0,SF,TE,koolaid403,9,BB5
 Dalton Schultz,Stanford,6.0,HOU,TE,koolaid403,14,BB5
 David Montgomery,Iowa State,5.0,DET,RB,koolaid403,5,BB5
