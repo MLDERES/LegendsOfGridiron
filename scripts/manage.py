@@ -36,6 +36,10 @@ def clean_player_data(data):
        'birth_city', 'injury_start_date', 'birth_state','competitions','rotowire_id', 'sportradar_id', 'injury_notes',
        'yahoo_id', 'news_updated', 'injury_body_part',
        'metadata','high_school'])
+    # Set any value in the team column that is None to 'FA'
+    filtered_df['team'] = filtered_df['team'].fillna('FA').replace('None', 'FA').replace('', 'FA')
+
+    
     # Set the index to player_id
     filtered_df = filtered_df.set_index('player_id')
     return filtered_df
