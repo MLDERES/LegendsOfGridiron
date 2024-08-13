@@ -33,8 +33,8 @@ def clean_player_data(data):
     filtered_df = df[df['position'].isin(['WR', 'QB', 'RB', 'TE'])]
     # Drop unnecessary columns
     filtered_df = filtered_df.drop(columns=['injury_status','birth_country',
-       'birth_city', 'injury_start_date', 'birth_state','competitions','rotowire_id', 'sportradar_id', 'injury_notes',
-       'yahoo_id', 'news_updated', 'injury_body_part',
+       'birth_city', 'injury_start_date', 'birth_state','competitions', 'injury_notes',
+       'news_updated', 'injury_body_part',
        'metadata','high_school'])
     # Set any value in the team column that is None to 'FA'
     filtered_df['team'] = filtered_df['team'].fillna('FA').replace('None', 'FA').replace('', 'FA')
