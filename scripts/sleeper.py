@@ -77,5 +77,17 @@ def get_all_picks(draft_id):
         
     return draft_picks
 
+# Get the matchups for the week in a given week
+def get_matchups(league_id, week):
+    r = requests.get(f'{LEAGUE_URI}/{league_id}/matchups/{week}')
+    matchups = r.json()
+    with open(DATA_FOLDER/f'matchups_{week}.json', 'w') as file:
+        json.dump(matchups, file)
+    
+    # Load the matchups data into a dataframe
+    matchups_df = pd.DataFrame(matchups)
+    return matchups_df
+
 if __name__ == '__main__':
-   get_all_picks()
+   mu = get_matchups(1060410179696533504, 1)
+   print(mu)
