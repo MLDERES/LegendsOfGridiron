@@ -1,38 +1,40 @@
 // Function to populate the matchup data table
 function populateMatchupData() {
     const tableBody = document.querySelector('tbody');
+    const opponentTableBody = document.querySelector('#opponent-table tbody'); // For the new table
 
-    // Function to count the occurrences of each team in the winner and loser columns
+    // Function to count occurrences for wins/losses
     function countOccurrences(data) {
         const teams = {};
+        const matchups = {}; // For tracking matchups
 
-        // Loop through each row in the CSV data
         data.forEach(row => {
             const winner = row.Winner;
             const loser = row.Loser;
 
-            // Count the wins for each team
+            // Count the wins and losses for each team
             if (winner in teams) {
                 teams[winner].wins++;
             } else {
                 teams[winner] = { wins: 1, losses: 0 };
             }
 
-            // Count the losses for each team
             if (loser in teams) {
                 teams[loser].losses++;
             } else {
                 teams[loser] = { wins: 0, losses: 1 };
             }
+
+            // Track matchups where the same winner beats the same loser
+            const matchupKey = `${winner}_vs_${loser}`;
+            if (matchups[matchupKey]) {
+                matchups[matchupKey].count++;
+            } else {
+                matchups[matchupKey] = { winner, loser, count: 1 };
+            }
         });
 
-        // Calculate win percentage for each team
-        Object.keys(teams).forEach(team => {
-            const totalGames = teams[team].wins + teams[team].losses;
-            teams[team].winPercentage = (teams[team].wins / totalGames).toFixed(2);
-        });
-
-        return teams;
+        return { teams, matchups };
     }
 
     // Fetch the CSV data from the correct path
@@ -42,36 +44,37 @@ function populateMatchupData() {
             // Parse the CSV data
             const parsedData = Papa.parse(data, { header: true }).data;
 
-            // Count the occurrences of each team
-            const teamOccurrences = countOccurrences(parsedData);
+            // Count occurrences
+            const { teams, matchups } = countOccurrences(parsedData);
 
-            // Convert the object to an array and sort by win percentage
-            const sortedTeams = Object.keys(teamOccurrences).map(team => ({
+            // Populate the main table (team stats)
+            const sortedTeams = Object.keys(teams).map(team => ({
                 team,
-                ...teamOccurrences[team]
-            })).sort((a, b) => b.winPercentage - a.winPercentage); // Sort by win percentage in descending order
+                ...teams[team]
+            })).sort((a, b) => b.wins - a.wins); // Sort by wins
 
-            // Populate the table with the team data in sorted order
             sortedTeams.forEach(teamData => {
                 const row = document.createElement('tr');
-
-                const teamCell = document.createElement('td');
-                teamCell.textContent = teamData.team;
-                row.appendChild(teamCell);
-
-                const winsCell = document.createElement('td');
-                winsCell.textContent = teamData.wins;
-                row.appendChild(winsCell);
-
-                const lossesCell = document.createElement('td');
-                lossesCell.textContent = teamData.losses;
-                row.appendChild(lossesCell);
-
-                const winPercentageCell = document.createElement('td');
-                winPercentageCell.textContent = teamData.winPercentage;
-                row.appendChild(winPercentageCell);
-
+                row.innerHTML = `
+                    <td>${teamData.team}</td>
+                    <td>${teamData.wins}</td>
+                    <td>${teamData.losses}</td>
+                    <td>${(teamData.wins / (teamData.wins + teamData.losses)).toFixed(2)}</td>
+                `;
                 tableBody.appendChild(row);
+            });
+
+            // Populate the opponent breakdown table
+            Object.values(matchups).forEach(matchup => {
+                if (matchup.count > 1) { // Only show if the winner beat the loser more than once
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${matchup.winner}</td>
+                        <td>${matchup.loser}</td>
+                        <td>${matchup.count}</td>
+                    `;
+                    opponentTableBody.appendChild(row);
+                }
             });
         })
         .catch(error => {
