@@ -1,30 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matchup Data</title>
+
+    <!-- Link to your site's global CSS file for consistency -->
+    <link rel="stylesheet" href="static/css/styles.css">
+
     <style>
+        /* Add specific styling for the table to blend it with the existing site */
         table {
+            width: 80%; /* Set table width to 80% */
+            margin: 20px auto; /* Center the table horizontally */
             border-collapse: collapse;
-            width: 100%;
         }
 
         th,
         td {
-            border: 1px solid black;
-            padding: 8px;
+            border: 1px solid #ddd;
+            padding: 12px;
             text-align: left;
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            color: #333;
         }
 
         th {
+            background-color: #4CAF50;
+            /* You can replace this with the actual header color used on your site */
+            color: white;
+        }
+
+        tr:nth-child(even) {
             background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        h1 {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            text-align: center;
+        }
+
+        button {
+            background-color: #4CAF50;
+            /* Adjust based on your site's button style */
+            color: white;
+            padding: 12px 20px;
+            margin: 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+            /* Lighter hover effect */
+        }
+
+        /* Add responsive styles if your site is responsive */
+        @media screen and (max-width: 600px) {
+            table {
+                width: 80%;
+            }
+
+            th,
+            td {
+                padding: 8px;
+            }
         }
     </style>
 </head>
 
 <body onload="populateMatchupData()">
+
+<header>
+    <div class="header-content">
+        <img src="static/img/LegendLogo.png" alt="League Logo" class="large-logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">League Home</a></li>
+        </ul>
+    </nav>
+</header>
+
+
     <h1>Matchup Data</h1>
-    <table>
+    <table width="80%">
         <thead>
             <tr>
                 <th>Team</th>
@@ -38,8 +106,15 @@
         </tbody>
     </table>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
-    <script src="scripts/web_scripts.js"/>
-</body>
+    <!-- Footer from your site -->
+    <footer>
+        <!-- Add footer content similar to the front page -->
+        <p>© 2024 Legends of the Gridiron. All rights reserved.</p>
+    </footer>
 
+    <!-- Load external scripts and your main JS file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="scripts/main.js"></script>
+
+</body>
 </html>
