@@ -94,6 +94,10 @@
                     lossesCell.textContent = teamOccurrences[team].losses;
                     row.appendChild(lossesCell);
 
+                    const winPercentageCell = document.createElement('td');
+                    winPercentageCell.textContent = (teamOccurrences[team].wins / (teamOccurrences[team].wins + teamOccurrences[team].losses)).toFixed(2);  
+                    row.appendChild(winPercentageCell);
+
                     tableBody.appendChild(row);
                 });
             })
