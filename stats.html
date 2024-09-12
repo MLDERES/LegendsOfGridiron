@@ -12,8 +12,10 @@
     <style>
         /* Add specific styling for the table to blend it with the existing site */
         table {
-            width: 80%; /* Set table width to 80% */
-            margin: 20px auto; /* Center the table horizontally */
+            width: 80%;
+            /* Set table width to 80% */
+            margin: 20px auto;
+            /* Center the table horizontally */
             border-collapse: collapse;
         }
 
@@ -79,50 +81,54 @@
 
 <body onload="populateMatchupData()">
 
-<header>
-    <div class="header-content">
-        <img src="static/img/LegendLogo.png" alt="League Logo" class="large-logo">
-    </div>
-    <nav>
-        <ul>
-            <li><a href="index.html">League Home</a></li>
-            <li><a href="#win-loss">Win/Loss</a></li>
-            <li><a href="#opponent-table">Opponents</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <div class="header-content">
+            <img src="static/img/LegendLogo.png" alt="League Logo" class="large-logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">League Home</a></li>
+                <li><a href="#win-loss">Win/Loss</a></li>
+                <li><a href="#opponent-table">Opponents</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
     <h1>Matchup Data</h1>
-    <h2 >Win/Loss Percentages</h2>
-    <table id="win-loss">
-        <thead>
-            <tr>
-                <th>Team</th>
-                <th>Wins</th>
-                <th>Losses</th>
-                <th>Win Percentage</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Table will be populated by JavaScript -->
-        </tbody>
-    </table>
+    <section class="stats" id="win-loss">
+        <h2>Win/Loss Percentages</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Win Percentage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table will be populated by JavaScript -->
+            </tbody>
+        </table>
+    </section>
 
     <!-- New Table for Opponent Breakdown -->
-    <h2>Winners vs. Opponents (Multiple Wins)</h2>
-    <table id="opponent-table">
-        <thead>
-            <tr>
-                <th>Winner</th>
-                <th>Loser</th>
-                <th>Times Beaten</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Opponent breakdown data will be inserted by JavaScript -->
-        </tbody>
-    </table>
+    <section class="stats" id="opponent-table">
+        <h2>Winners vs. Opponents (Multiple Wins)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Winner</th>
+                    <th>Loser</th>
+                    <th>Times Beaten</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Opponent breakdown data will be inserted by JavaScript -->
+            </tbody>
+        </table>
+    </section>
 
 
     <!-- Footer from your site -->
@@ -136,4 +142,5 @@
     <script src="scripts/web_scripts.js"></script>
 
 </body>
+
 </html>
