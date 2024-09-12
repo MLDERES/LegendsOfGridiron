@@ -65,8 +65,5 @@ def update_db_with_players(player_df):
     player_df.to_sql('players', conn, if_exists='replace', index=True)
 
 def weekly_maintenance():
-    # Get player data
-    # Insert player data into the database
-    # Get all the coaches in the leagues
-    # Insert coaches into the database
+    # Update matchups
     pass
