@@ -70,7 +70,7 @@ function populateMatchupData() {
 
             // Populate the opponent breakdown table
             Object.values(matchups).forEach(matchup => {
-                if (matchup.count > 1) {  
+                f(matchup.count > 1 && matchup.loser !== "MEDIAN" && matchup.winner !== "MEDIAN") {  // Exclude rows with "MEDIAN"
                     const row = document.createElement('tr');
                     row.innerHTML = `
                         <td>${matchup.winner}</td>
