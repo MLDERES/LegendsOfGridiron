@@ -47,26 +47,30 @@ function populateMatchupData() {
             // Count occurrences
             const { teams, matchups } = countOccurrences(parsedData);
 
-            // Populate the main table (team stats)
+            // Convert teams into an array and calculate win percentages
             const sortedTeams = Object.keys(teams).map(team => ({
                 team,
-                ...teams[team]
-            })).sort((a, b) => b.wins - a.wins); // Sort by wins
+                ...teams[team],
+                winPercentage: teams[team].wins / (teams[team].wins + teams[team].losses)
+            }))
+                .filter(teamData => teamData.team !== "MEDIAN") // Exclude "MEDIAN"
+                .sort((a, b) => b.winPercentage - a.winPercentage); // Sort by win percentage in descending order
 
+            // Populate the main table (team stats)
             sortedTeams.forEach(teamData => {
                 const row = document.createElement('tr');
                 row.innerHTML = `
                     <td>${teamData.team}</td>
                     <td>${teamData.wins}</td>
                     <td>${teamData.losses}</td>
-                    <td>${(teamData.wins / (teamData.wins + teamData.losses)).toFixed(2)}</td>
+                    <td>${teamData.winPercentage.toFixed(2)}</td>
                 `;
                 tableBody.appendChild(row);
             });
 
             // Populate the opponent breakdown table
             Object.values(matchups).forEach(matchup => {
-                if (matchup.count > 1) { // Only show if the winner beat the loser more than once
+                if (matchup.count > 1 && matchup.loser !== "MEDIAN" && matchup.winner !== "MEDIAN") {  // Exclude rows with "MEDIAN"
                     const row = document.createElement('tr');
                     row.innerHTML = `
                         <td>${matchup.winner}</td>
