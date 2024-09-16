@@ -1,6 +1,6 @@
 // Function to populate the matchup data table
 function populateMatchupData() {
-    const tableBody = document.querySelector('tbody');
+    const tableBody = document.querySelector('tbody'); // For the first table
     const opponentTableBody = document.querySelector('#opponent-table tbody'); // For the second table
     const medianTableBody = document.querySelector('#median-table tbody'); // For the third table (against MEDIAN)
 
@@ -66,22 +66,27 @@ function populateMatchupData() {
             const { teams, matchups, medianRecords } = countOccurrences(parsedData);
 
             // Convert teams into an array and calculate win percentages
-            const sortedTeams = Object.keys(teams).map(team => ({
-                team,
-                ...teams[team],
-                winPercentage: teams[team].wins / (teams[team].wins + teams[team].losses)
-            }))
-                .filter(teamData => teamData.team !== "MEDIAN") // Exclude "MEDIAN"
-                .sort((a, b) => b.winPercentage - a.winPercentage); // Sort by win percentage in descending order
+            const sortedTeams = Object.keys(teams).map(team => {
+                const record = teams[team];
+                const totalGames = record.wins + record.losses;
+                const winPercentage = totalGames > 0 ? record.wins / totalGames : 0;
+                return { coach: team, ...record, winPercentage, totalGames };
+            })
+                .sort((a, b) => {
+                    // Sort by win percentage first, and then by total games played
+                    if (b.winPercentage !== a.winPercentage) {
+                        return b.winPercentage - a.winPercentage;
+                    } else {
+                        return b.totalGames - a.totalGames; // Secondary sort by games played
+                    }
+                });
 
-            // Populate the main table (team stats)
-            sortedTeams.forEach(teamData => {
+            // Populate the first table (team stats)
+            sortedTeams.forEach(record => {
                 const row = document.createElement('tr');
                 row.innerHTML = `
-                    <td>${teamData.team}</td>
-                    <td>${teamData.wins}</td>
-                    <td>${teamData.losses}</td>
-                    <td>${teamData.winPercentage.toFixed(2)}</td>
+                    <td>${record.coach}</td>
+                    <td>${record.wins}-${record.losses} (${(record.winPercentage * 100).toFixed(2)}%)</td>
                 `;
                 tableBody.appendChild(row);
             });
