@@ -1,8 +1,7 @@
-// Function to populate the matchup data table
+// Function to populate the combined data table
 function populateMatchupData() {
-    const tableBody = document.querySelector('tbody'); // For the first table
-    const opponentTableBody = document.querySelector('#opponent-table tbody'); // For the second table
-    const medianTableBody = document.querySelector('#median-table tbody'); // For the third table (against MEDIAN)
+    const combinedTableBody = document.querySelector('#win-loss tbody'); // For the combined table (overall + MEDIAN)
+    const opponentTableBody = document.querySelector('#opponent-table tbody'); // For the second table (coach vs. coach matchups)
 
     // Function to count occurrences for wins/losses
     function countOccurrences(data) {
@@ -55,43 +54,76 @@ function populateMatchupData() {
         return { teams, matchups, medianRecords };
     }
 
+    // Debugging: Check if fetch is successful
+    console.log('Fetching data...');
+
     // Fetch the CSV data from the correct path
     fetch('data/league_outcomes.csv')
-        .then(response => response.text())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
         .then(data => {
+            console.log('Data fetched:', data);
+
             // Parse the CSV data
             const parsedData = Papa.parse(data, { header: true }).data;
+
+            // Debugging: Check if data is parsed correctly
+            console.log('Parsed data:', parsedData);
 
             // Count occurrences
             const { teams, matchups, medianRecords } = countOccurrences(parsedData);
 
-            // Convert teams into an array and calculate win percentages
-            const sortedTeams = Object.keys(teams).map(team => {
-                const record = teams[team];
-                const totalGames = record.wins + record.losses;
-                const winPercentage = totalGames > 0 ? record.wins / totalGames : 0;
-                return { coach: team, ...record, winPercentage, totalGames };
+            // Debugging: Check the countOccurrences result
+            console.log('Teams:', teams);
+            console.log('Median Records:', medianRecords);
+            console.log('Matchups:', matchups);
+
+            // Convert teams into an array and calculate win percentages for both overall and against "MEDIAN"
+            const combinedRecords = Object.keys(teams).map(coach => {
+                const overallRecord = teams[coach];
+                const totalGames = overallRecord.wins + overallRecord.losses;
+                const overallWinPercentage = totalGames > 0 ? overallRecord.wins / totalGames : 0;
+
+                const medianRecord = medianRecords[coach] || { wins: 0, losses: 0 };
+                const medianTotalGames = medianRecord.wins + medianRecord.losses;
+                const medianWinPercentage = medianTotalGames > 0 ? medianRecord.wins / medianTotalGames : 0;
+
+                return {
+                    coach,
+                    overallWins: overallRecord.wins,
+                    overallLosses: overallRecord.losses,
+                    overallWinPercentage,
+                    medianWins: medianRecord.wins,
+                    medianLosses: medianRecord.losses,
+                    medianWinPercentage,
+                    totalGames
+                };
             })
                 .sort((a, b) => {
-                    // Sort by win percentage first, and then by total games played
-                    if (b.winPercentage !== a.winPercentage) {
-                        return b.winPercentage - a.winPercentage;
+                    // Sort by overall win percentage first, and then by total games played
+                    if (b.overallWinPercentage !== a.overallWinPercentage) {
+                        return b.overallWinPercentage - a.overallWinPercentage;
                     } else {
-                        return b.totalGames - a.totalGames; // Secondary sort by games played
+                        return b.totalGames - a.totalGames; // Secondary sort by total games played
                     }
                 });
 
-            // Populate the first table (team stats)
-            sortedTeams.forEach(record => {
+            // Populate the combined table (overall + MEDIAN records)
+            combinedRecords.forEach(record => {
                 const row = document.createElement('tr');
                 row.innerHTML = `
                     <td>${record.coach}</td>
-                    <td>${record.wins}-${record.losses} (${(record.winPercentage * 100).toFixed(2)}%)</td>
+                    <td>${record.overallWins}-${record.overallLosses} (${(record.overallWinPercentage * 100).toFixed(2)}%)</td>
+                    <td>${record.medianWins}-${record.medianLosses} (${(record.medianWinPercentage * 100).toFixed(2)}%)</td>
                 `;
-                tableBody.appendChild(row);
+                combinedTableBody.appendChild(row);
             });
 
-            // Populate the opponent breakdown table
+            // Populate the second table (opponent matchups)
             Object.values(matchups).forEach(matchup => {
                 if (matchup.count > 1 && matchup.loser !== "MEDIAN" && matchup.winner !== "MEDIAN") {  // Exclude rows with "MEDIAN"
                     const row = document.createElement('tr');
@@ -103,34 +135,8 @@ function populateMatchupData() {
                     opponentTableBody.appendChild(row);
                 }
             });
-
-            // Convert the median records into an array and calculate win percentage
-            const sortedMedianRecords = Object.keys(medianRecords).map(coach => {
-                const record = medianRecords[coach];
-                const totalGames = record.wins + record.losses;
-                const winPercentage = totalGames > 0 ? record.wins / totalGames : 0;
-                return { coach, ...record, winPercentage, totalGames };
-            })
-                .sort((a, b) => {
-                    // Sort by win percentage first, and then by total games played
-                    if (b.winPercentage !== a.winPercentage) {
-                        return b.winPercentage - a.winPercentage;
-                    } else {
-                        return b.totalGames - a.totalGames; // Secondary sort by games played
-                    }
-                });
-
-            // Populate the third table (record against MEDIAN)
-            sortedMedianRecords.forEach(record => {
-                const row = document.createElement('tr');
-                row.innerHTML = `
-                    <td>${record.coach}</td>
-                    <td>${record.wins}-${record.losses} (${(record.winPercentage * 100).toFixed(2)}%)</td>
-                `;
-                medianTableBody.appendChild(row);
-            });
         })
         .catch(error => {
-            console.error('Error:', error);
+            console.error('Error fetching or parsing data:', error);
         });
 }

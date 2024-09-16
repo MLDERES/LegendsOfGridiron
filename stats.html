@@ -83,7 +83,8 @@
             <thead>
                 <tr>
                     <th>Team</th>
-                    <th>Record</th>
+                    <th>Overall Record</th>
+                    <th>Median Record</th>
                 </tr>
             </thead>
             <tbody>
@@ -93,12 +94,12 @@
     </section>
 
     <!-- New Table for Opponent Breakdown -->
-    <section class="stats" id="opponent-table">
+    <section class="stats" >
         <h2>Winners vs. Losers (Multiple Wins)</h2>
         <p>This is a breakdown of how many times each time beat another team.  You've got to beat
             another coach at least 2x for it to show up here.
         </p>
-        <table>
+        <table id="opponent-table">
             <thead>
                 <tr>
                     <th>Winner</th>
@@ -109,22 +110,6 @@
             <tbody>
                 <!-- Opponent breakdown data will be inserted by JavaScript -->
             </tbody>
-        </table>
-    </section>
-
-    <!-- New Table for Opponent Breakdown -->
-    <section class="stats" id="median-record-table">
-        <h2>Record against the median</h2>
-        <p>A particular teams record against the median.
-        </p>
-        <table id="median-table">
-            <thead>
-                <tr>
-                    <th>Coach</th>
-                    <th>Record against the median</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
         </table>
     </section>
 
