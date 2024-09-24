@@ -48,6 +48,10 @@
             color: #333;
             text-align: center;
         }
+        #max-week {
+           text-align: center; /* Horizontally center the text */
+           margin: 0 auto;     /* Ensure the margin is auto for proper centering */
+        }
 
         /* Add responsive styles if your site is responsive */
         @media screen and (max-width: 600px) {
@@ -76,6 +80,7 @@
 
 
     <h1>Matchup Data</h1>
+    <h2><div id="max-week"></div></h2>
     <section class="stats" id="win-loss">
         <h2>Win/Loss Percentages</h2>
         <p>Overall win-loss percentage by team (including against the median).</p>
@@ -87,7 +92,7 @@
                     <th>Median Record</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="combined-table">
                 <!-- Table will be populated by JavaScript -->
             </tbody>
         </table>
