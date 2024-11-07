@@ -1,0 +1,51 @@
+.stats-style table {
+            width: 90%;
+            /* Set table width to 80% */
+            margin: 20px auto;
+            /* Center the table horizontally */
+            border-collapse: collapse;
+        }
+
+  
+
+.stats-style th,
+.stats-style td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            color: #333;
+        }
+
+.stats-style th {
+            background-color: #4CAF50;
+            /* You can replace this with the actual header color used on your site */
+            color: white;
+        }
+
+.stats-style tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+.stats-style tr:hover {
+            background-color: #ddd;
+        }
+
+.stats-style h1 {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            text-align: center;
+        }
+.stats-style #max-week {
+           text-align: center; /* Horizontally center the text */
+           margin: 0 auto;     /* Ensure the margin is auto for proper centering */
+        }
+
+        /* Add responsive styles if your site is responsive */
+        @media screen and (max-width: 600px) {
+            .stats-style th,
+            .stats-style td {
+                padding: 8px;
+            }
+        }

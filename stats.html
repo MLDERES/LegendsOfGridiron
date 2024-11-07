@@ -8,62 +8,11 @@
 
     <!-- Link to your site's global CSS file for consistency -->
     <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="static/css/stats-styles.css">
 
-    <style>
-        /* Add specific styling for the table to blend it with the existing site */
-        table {
-            width: 90%;
-            /* Set table width to 80% */
-            margin: 20px auto;
-            /* Center the table horizontally */
-            border-collapse: collapse;
-        }
-
-        th,
-        td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: left;
-            font-family: 'Arial', sans-serif;
-            font-size: 16px;
-            color: #333;
-        }
-
-        th {
-            background-color: #4CAF50;
-            /* You can replace this with the actual header color used on your site */
-            color: white;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-
-        tr:hover {
-            background-color: #ddd;
-        }
-
-        h1 {
-            font-family: 'Arial', sans-serif;
-            color: #333;
-            text-align: center;
-        }
-        #max-week {
-           text-align: center; /* Horizontally center the text */
-           margin: 0 auto;     /* Ensure the margin is auto for proper centering */
-        }
-
-        /* Add responsive styles if your site is responsive */
-        @media screen and (max-width: 600px) {
-            th,
-            td {
-                padding: 8px;
-            }
-        }
-    </style>
 </head>
 
-<body onload="populateMatchupData()">
+<body onload="populateMatchupData()" class="stats-style">
 
     <header>
         <div class="header-content">
@@ -84,7 +33,7 @@
     <section class="stats" id="win-loss">
         <h2>Win/Loss Percentages</h2>
         <p>Overall win-loss percentage by team (including against the median).</p>
-        <table>
+        <table class="stats-table">
             <thead>
                 <tr>
                     <th>Team</th>
