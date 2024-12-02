@@ -15,6 +15,11 @@
         td {
             text-align: center;
         }
+
+        .highlighted-row {
+            background-color: #ffff99;
+            /* Light yellow background to highlight */
+        }
     </style>
 </head>
 
@@ -32,6 +37,7 @@
     </header>
     <div class="container mt-5">
         <h2 class="text-center">Fantasy League Standings</h2>
+        <p>Teams currently in the playoffs are <span style='background-color: #ffff99;'>highlighted</span></p>
         <div id="standings-container" class="table-responsive">
             <!-- Tables for each league will be added here dynamically -->
         </div>
@@ -138,7 +144,7 @@
                 });
 
                 const tableBody = table.querySelector('tbody');
-                standingsData.forEach(team => {
+                standingsData.forEach((team, index) => {
                     const row = document.createElement('tr');
                     row.innerHTML = `
                         <td>${team['Team'] || 'N/A'}</td>
@@ -147,6 +153,15 @@
                         <td>${team['Win_Percentage'].toFixed(2) || 'N/A'}</td>
                         <td>${team['Total Points'] || 'N/A'}</td>
                     `;
+
+                    // Highlight the sixth row of each table
+                    if (!leagueName.trim().startsWith('QuickDraft') && index <= 5) {
+                        row.classList.add('highlighted-row');
+                    }
+                    if (leagueName.trim().startsWith('QuickDraft')) {
+                        row.classList.add('highlighted-row');
+                    }
+
                     tableBody.appendChild(row);
                 });
 
