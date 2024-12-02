@@ -41,7 +41,12 @@
             // Hardcoded list of known CSV files in the /data/standings folder
             const csvFiles = [
                 'league_bb1.csv',
-                'league_bb2.csv'
+                'league_bb2.csv',
+                'league_BB3.csv',
+                'league_BB4.csv',
+                'league_BB5.csv',
+                'league_QuickDraft 1.csv',
+                'league_QuickDraft 2.csv',
             ];
 
             function loadCSVFiles() {
@@ -98,24 +103,38 @@
                             <th>Team Name</th>
                             <th>Wins</th>
                             <th>Losses</th>
-                            <th>Points For</th>
-                            <th>Points Against</th>
+                            <th>Win Percentage</th>
+                            <th>Total Points</th>
                         </tr>
                     </thead>
                     <tbody></tbody>
                 `;
 
                 // Populate the table with JSON data
-                const standingsData = parseCSV(csvData);
+                let standingsData = parseCSV(csvData);
+                standingsData = standingsData.map(team => {
+                    team['Win_Percentage'] = parseFloat(team['Win_Percentage']) || 0;
+                    team['Total Points'] = parseFloat(team['Total Points']) || 0;
+                    return team;
+                });
+
+                // Sort by Win_Percentage first, then by Total Points
+                standingsData.sort((a, b) => {
+                    if (b['Win_Percentage'] !== a['Win_Percentage']) {
+                        return b['Win_Percentage'] - a['Win_Percentage'];
+                    }
+                    return b['Total Points'] - a['Total Points'];
+                });
+
                 const tableBody = table.querySelector('tbody');
                 standingsData.forEach(team => {
                     const row = document.createElement('tr');
                     row.innerHTML = `
-                        <td>${team['Team Name'] || 'N/A'}</td>
+                        <td>${team['Team'] || 'N/A'}</td>
                         <td>${team['Wins'] || 'N/A'}</td>
                         <td>${team['Losses'] || 'N/A'}</td>
-                        <td>${team['Points For'] || 'N/A'}</td>
-                        <td>${team['Points Against'] || 'N/A'}</td>
+                        <td>${team['Win_Percentage'].toFixed(2) || 'N/A'}</td>
+                        <td>${team['Total Points'] || 'N/A'}</td>
                     `;
                     tableBody.appendChild(row);
                 });

@@ -1,13 +1,13 @@
-Team Name, Wins, Losses, Points For, Points Against
-Dragons, 10, 2, 320, 180
-Warriors, 8, 4, 290, 210
-Titans, 7, 5, 275, 230
-Knights, 6, 6, 260, 240
-Giants, 5, 7, 250, 250
-Vikings, 4, 8, 240, 270
-Raiders, 3, 9, 230, 280
-Eagles, 2, 10, 220, 290
-Panthers, 9, 3, 310, 190
-Bears, 7, 5, 280, 220
-Lions, 6, 6, 265, 235
-Sharks, 5, 7, 255, 245
+Team,Wins,Losses,Total Points,Win_Percentage
+ChiJV,19,7,2052.1,0.73
+ProfessorD,18,8,2046.08,0.69
+WestCoastNonsense,18,8,2184.24,0.69
+gpeisert1,16,10,1950.22,0.62
+ConorDeLa,14,12,2015.28,0.54
+jnappy,13,13,1964.1,0.5
+Mschmoopie,12,14,1868.52,0.46
+aledo,12,14,2076.82,0.46
+koolaid403,11,15,1889.04,0.42
+tford51,9,17,1707.26,0.35
+theBandit216,8,18,1818.16,0.31
+plfinken,6,20,1690.9,0.23
