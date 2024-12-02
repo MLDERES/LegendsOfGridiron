@@ -26,6 +26,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">League Home</a></li>
+                <li><a href="stats.html">Stats</a></li>
             </ul>
         </nav>
     </header>
@@ -38,7 +39,7 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            // Hardcoded list of known CSV files in the /data/standings folder
+            // Hardcoded list of known CSV files in the /data/standings folder, maintaining the desired order
             const csvFiles = [
                 'league_bb1.csv',
                 'league_bb2.csv',
@@ -50,7 +51,10 @@
             ];
 
             function loadCSVFiles() {
-                csvFiles.forEach(fileName => {
+                const tablesData = [];
+
+                // Load all CSV files and keep track of the order
+                csvFiles.forEach((fileName, index) => {
                     const filePath = `/data/standings/${fileName}`;
                     console.log('Attempting to load:', filePath);
 
@@ -63,7 +67,14 @@
                         })
                         .then(csvData => {
                             console.log('Successfully loaded:', fileName);
-                            createLeagueTable(fileName.replace('league_', '').replace('.csv', ''), csvData);
+                            tablesData[index] = { leagueName: fileName.replace('league_', '').replace('.csv', ''), csvData: csvData };
+
+                            // Check if all files are loaded
+                            if (tablesData.filter(Boolean).length === csvFiles.length) {
+                                tablesData.forEach(table => {
+                                    createLeagueTable(table.leagueName, table.csvData);
+                                });
+                            }
                         })
                         .catch(error => console.error('Error loading CSV file:', error));
                 });

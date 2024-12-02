@@ -7,6 +7,13 @@ from manage import clean_player_data
 from config import LEAGUE_LIST
 import pandas as pd
 from utility import run_query_scalar, run_query, DATA_PATH
+import logging
+
+logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
+logger = logging.getLogger(__name__)
+
+DEBUG= logger.debug
+INFO = logger.info
 
 SLEEPER_API = "https://api.sleeper.app/v1/players/nfl"
 
@@ -38,6 +45,7 @@ def calculate_standings(df_results):
     # The format of the file is League, Weeek, Winner, Loser, Winner Pts, Loser Pts
     # First get the results by league
     for l in df_results.League.unique():
+        INFO(f"Calculating Standings for {l}")
         df = df_results[df_results.League == l]
         # Total the Points for and the points against by team, but also the points if they were the loser   
         winner_points = df.groupby('Winner')['Winner Pts'].sum().reset_index().rename(columns={'Winner': 'Team', 'Winner Pts': 'Total Points'})
@@ -71,7 +79,7 @@ def calculate_standings(df_results):
     
 if __name__ == '__main__':
     latest_week = run_query_scalar("select max(week) from matchups")+1
-    print(f'Updating matchups for week {latest_week}')
+    INFO(f'Updating matchups for week {latest_week}')
     update_weekly_matchups(latest_week, drop_table=False)
 
     df_outcomes = run_query('''
@@ -83,6 +91,7 @@ if __name__ == '__main__':
         WHERE m1.points > m2.points''', 
         cols=['League','Week','Winner','Loser','Winner Pts','Loser Pts'])
     # Calculate the median for each league
+    INFO('Calculating median points')
     df_median_points = run_query('''select league_id, week, points from matchups''').groupby(['league_id','week']).median().reset_index()
 
     df_team_points = run_query('''
@@ -97,7 +106,9 @@ if __name__ == '__main__':
     df_combined['Loser']=df_combined.apply(lambda row: row['coach_name'] if row['points_team']<= row['points_median'] else 'MEDIAN', axis=1)
     df_output= df_combined[['league_name','week','Winner','Loser']].rename(columns={'league_name':'League','week':'Week'})
     df_results = pd.concat([df_outcomes,df_output], axis=0)
+    INFO('Writing out the results')
     df_results.to_csv(DATA_PATH/'league_outcomes.csv', index=False)
     
     # Now update the standings
+    INFO('Calculating Standings')
     calculate_standings(df_results)
