@@ -6,17 +6,15 @@ MainLeague,12,ChiJV,tford51,127.66,108.98
 MainLeague,4,ChiJV,ProfessorD,158.1,130.18
 MainLeague,9,ChiJV,aledo,215.08,109.7
 MainLeague,2,ChiJV,plfinken,166.48,126.28
-MainLeague,13,ChiJV,plfinken,144.74,114.62
 MainLeague,7,ChiJV,koolaid403,102.7,101.84
 BB1,11,ProfessorD,gpeisert1,181.04,152.26
 BB1,2,ProfessorD,theBandit216,150.14,144.52
-BB1,13,ProfessorD,theBandit216,112.06,107.9
 BB1,3,ProfessorD,jnappy,207.5,129.58
 BB1,7,ProfessorD,koolaid403,175.2,125.94
 BB1,10,ProfessorD,ChiJV,140.32,129.18
 BB1,5,ProfessorD,tford51,162.26,135.12
 BB1,1,ProfessorD,aledo,161.64,146.18
-BB2,13,ProfessorD,jnappy,165.3,135.28
+BB2,13,ProfessorD,jnappy,222.26,159.66
 BB2,4,ProfessorD,theBandit216,167.0,158.36
 BB2,8,ProfessorD,ConorDeLa,170.08,147.28
 BB2,1,ProfessorD,koolaid403,172.64,163.52
@@ -27,7 +25,7 @@ BB2,9,ProfessorD,ChiJV,173.56,119.44
 QuickDraft 1,4,ProfessorD,koolaid403,194.32,119.32
 QuickDraft 1,3,ProfessorD,ConorDeLa,163.54,160.04
 QuickDraft 1,10,ProfessorD,ConorDeLa,164.92,148.68
-QuickDraft 1,13,ProfessorD,WestCoastNonsense,135.02,70.28
+QuickDraft 1,13,ProfessorD,WestCoastNonsense,146.66,105.32
 QuickDraft 1,2,ProfessorD,Frank1983,171.86,156.38
 QuickDraft 1,9,ProfessorD,Frank1983,163.16,124.94
 QuickDraft 1,7,ProfessorD,aledo,156.76,142.92
@@ -37,6 +35,7 @@ QuickDraft 1,12,ProfessorD,theBandit216,144.06,112.42
 Quickdraft 2,6,ProfessorD,aledo,183.64,160.24
 Quickdraft 2,11,ProfessorD,theBandit216,193.9,191.22
 Quickdraft 2,12,ProfessorD,theBandit216,166.06,129.62
+Quickdraft 2,13,ProfessorD,theBandit216,163.3,160.18
 Quickdraft 2,3,ProfessorD,tford51,151.86,136.74
 Quickdraft 2,2,ProfessorD,Frank1983,156.22,148.04
 Quickdraft 2,9,ProfessorD,Frank1983,167.14,166.34
@@ -44,11 +43,13 @@ Quickdraft 2,8,ProfessorD,WestCoastNonsense,230.86,175.4
 BB3,1,ProfessorD,ConorDeLa,142.48,119.86
 BB3,9,ProfessorD,koolaid403,136.66,120.5
 BB3,2,ProfessorD,Mschmoopie,209.24,154.42
+BB3,13,ProfessorD,Mschmoopie,154.3,152.1
 BB3,8,ProfessorD,Deerslayer65,162.58,103.36
 BB3,5,ProfessorD,gpeisert1,128.16,118.88
 BB4,3,ProfessorD,gpeisert1,172.58,142.68
 BB4,1,ProfessorD,ConorDeLa,137.38,119.2
 BB4,11,ProfessorD,aledo,143.24,129.6
+BB4,13,ProfessorD,koolaid403,162.02,160.62
 BB5,4,ProfessorD,theBandit216,172.56,128.94
 BB5,11,ProfessorD,jnappy,210.54,124.66
 BB5,1,ProfessorD,WestCoastNonsense,144.98,131.18
@@ -66,7 +67,6 @@ MainLeague,5,gpeisert1,theBandit216,193.98,125.74
 MainLeague,10,gpeisert1,tford51,197.36,98.28
 MainLeague,3,gpeisert1,ProfessorD,172.8,83.28
 MainLeague,12,gpeisert1,CoryPeisert,155.46,148.58
-BB1,13,gpeisert1,WestCoastNonsense,124.46,115.32
 BB1,5,gpeisert1,theBandit216,180.68,153.82
 BB1,7,gpeisert1,Mschmoopie,175.82,136.76
 BB1,8,gpeisert1,koolaid403,187.78,160.58
@@ -80,7 +80,7 @@ BB2,7,jnappy,ChiJV,135.96,125.32
 QuickDraft 1,11,koolaid403,ProfessorD,164.22,151.4
 QuickDraft 1,9,koolaid403,WestCoastNonsense,164.48,162.6
 QuickDraft 1,6,koolaid403,Frank1983,151.82,145.02
-QuickDraft 1,13,koolaid403,Frank1983,128.52,126.48
+QuickDraft 1,13,koolaid403,Frank1983,157.22,143.76
 QuickDraft 1,5,koolaid403,tford51,153.16,131.78
 QuickDraft 1,8,koolaid403,theBandit216,165.36,133.92
 Quickdraft 2,10,aledo,ConorDeLa,168.7,161.3
@@ -88,7 +88,7 @@ Quickdraft 2,9,aledo,theBandit216,173.42,165.34
 Quickdraft 2,11,aledo,Frank1983,195.58,158.44
 BB3,3,tford51,ProfessorD,127.58,117.78
 BB3,2,tford51,ConorDeLa,159.88,116.82
-BB3,13,tford51,ConorDeLa,132.68,93.08
+BB3,13,tford51,ConorDeLa,196.08,159.4
 BB3,4,tford51,WestCoastNonsense,145.54,143.68
 BB3,10,tford51,koolaid403,153.2,135.68
 BB3,12,tford51,Mschmoopie,154.78,152.98
@@ -96,7 +96,7 @@ BB3,7,tford51,JeffMyers,162.74,150.98
 BB4,10,gpeisert1,tford51,176.24,99.74
 BB4,9,gpeisert1,jnappy,218.92,116.5
 BB4,2,gpeisert1,ConorDeLa,170.62,134.74
-BB4,13,gpeisert1,ConorDeLa,152.04,132.68
+BB4,13,gpeisert1,ConorDeLa,185.12,165.06
 BB4,12,gpeisert1,koolaid403,190.18,141.5
 BB4,5,gpeisert1,WestCoastNonsense,148.34,102.86
 BB4,7,gpeisert1,theBandit216,183.76,119.24
@@ -110,7 +110,6 @@ MainLeague,8,WestCoastNonsense,ChiJV,176.98,164.5
 MainLeague,5,WestCoastNonsense,ConorDeLa,169.24,105.86
 MainLeague,11,WestCoastNonsense,Mschmoopie,167.98,121.22
 MainLeague,2,WestCoastNonsense,theBandit216,145.16,106.18
-MainLeague,13,WestCoastNonsense,theBandit216,183.44,109.58
 MainLeague,9,WestCoastNonsense,tford51,207.12,125.56
 MainLeague,1,WestCoastNonsense,aledo,158.26,121.58
 MainLeague,12,WestCoastNonsense,aledo,141.08,113.5
@@ -118,6 +117,7 @@ MainLeague,6,WestCoastNonsense,CoryPeisert,143.28,138.62
 MainLeague,3,WestCoastNonsense,koolaid403,116.92,77.42
 BB1,9,WestCoastNonsense,ProfessorD,218.74,182.3
 BB1,2,WestCoastNonsense,gpeisert1,148.44,113.52
+BB1,13,WestCoastNonsense,gpeisert1,180.52,139.06
 BB1,7,WestCoastNonsense,theBandit216,152.16,129.48
 BB1,6,WestCoastNonsense,jnappy,142.08,124.76
 BB1,11,WestCoastNonsense,Mschmoopie,180.52,124.88
@@ -128,21 +128,20 @@ BB1,12,WestCoastNonsense,plfinken,182.22,140.26
 BB1,8,WestCoastNonsense,aledo,235.5,157.82
 BB2,10,theBandit216,jnappy,169.36,131.4
 BB2,2,theBandit216,ConorDeLa,136.52,117.22
-BB2,13,theBandit216,ConorDeLa,90.2,61.84
+BB2,13,theBandit216,ConorDeLa,136.92,105.14
 BB2,8,theBandit216,Mschmoopie,173.84,171.76
 QuickDraft 1,7,ConorDeLa,koolaid403,152.9,122.68
 QuickDraft 1,5,ConorDeLa,WestCoastNonsense,190.6,114.4
 QuickDraft 1,12,ConorDeLa,WestCoastNonsense,171.7,103.3
 QuickDraft 1,4,ConorDeLa,aledo,148.46,129.1
 QuickDraft 1,2,ConorDeLa,tford51,156.64,149.26
-QuickDraft 1,13,ConorDeLa,theBandit216,138.54,53.6
+QuickDraft 1,13,ConorDeLa,theBandit216,157.74,100.08
 Quickdraft 2,5,ConorDeLa,ProfessorD,226.1,172.6
 Quickdraft 2,3,ConorDeLa,aledo,181.06,145.78
 Quickdraft 2,1,ConorDeLa,theBandit216,168.82,149.06
 Quickdraft 2,8,ConorDeLa,theBandit216,204.56,168.78
 Quickdraft 2,6,ConorDeLa,tford51,159.68,113.02
 Quickdraft 2,12,ConorDeLa,tford51,182.02,132.04
-Quickdraft 2,13,ConorDeLa,tford51,168.54,148.06
 Quickdraft 2,2,ConorDeLa,koolaid403,200.7,190.46
 Quickdraft 2,9,ConorDeLa,koolaid403,181.98,177.4
 Quickdraft 2,7,ConorDeLa,Frank1983,156.66,128.46
@@ -159,16 +158,17 @@ BB4,11,tford51,koolaid403,182.78,129.28
 BB4,7,tford51,WestCoastNonsense,167.56,117.28
 BB4,3,tford51,theBandit216,214.7,127.6
 BB4,2,tford51,JeffMyers,182.82,127.82
+BB4,13,tford51,JeffMyers,209.86,195.72
 BB4,1,tford51,Mschmoopie,155.08,127.98
 BB4,12,tford51,Mschmoopie,179.08,116.8
 BB4,4,tford51,msbosway,194.82,156.82
 BB5,1,theBandit216,ConorDeLa,122.88,97.94
 BB5,12,theBandit216,ConorDeLa,150.42,133.94
 BB5,5,theBandit216,WestCoastNonsense,174.22,171.7
-BB5,13,theBandit216,gpeisert1,91.8,78.42
 MainLeague,2,ConorDeLa,tford51,130.31,110.47
-MainLeague,13,ConorDeLa,tford51,128.12,112.2
+MainLeague,13,ConorDeLa,tford51,131.92,130.9
 MainLeague,7,ConorDeLa,ProfessorD,116.76,110.78
+BB1,13,theBandit216,ProfessorD,167.7,151.92
 BB1,12,theBandit216,jnappy,134.18,122.12
 BB1,8,theBandit216,Mschmoopie,165.58,160.0
 BB1,10,theBandit216,ConorDeLa,135.32,127.22
@@ -179,7 +179,6 @@ BB2,8,WestCoastNonsense,jnappy,205.68,162.76
 BB2,6,WestCoastNonsense,theBandit216,142.84,130.48
 BB2,3,WestCoastNonsense,gpeisert1,156.96,141.94
 BB2,11,WestCoastNonsense,koolaid403,176.02,165.08
-BB2,13,WestCoastNonsense,Mschmoopie,157.28,133.76
 BB2,9,WestCoastNonsense,tford51,194.38,156.3
 BB2,5,WestCoastNonsense,ChiJV,208.28,142.84
 BB2,7,WestCoastNonsense,aledo,138.48,137.24
@@ -190,7 +189,6 @@ QuickDraft 1,7,WestCoastNonsense,tford51,140.3,122.54
 QuickDraft 1,3,WestCoastNonsense,theBandit216,171.0,151.22
 QuickDraft 1,10,WestCoastNonsense,theBandit216,100.12,93.6
 Quickdraft 2,4,theBandit216,ProfessorD,173.8,161.0
-Quickdraft 2,13,theBandit216,ProfessorD,137.54,124.94
 Quickdraft 2,2,theBandit216,aledo,189.52,130.24
 Quickdraft 2,7,theBandit216,tford51,177.68,130.58
 Quickdraft 2,10,theBandit216,koolaid403,175.14,163.4
@@ -206,7 +204,6 @@ BB4,6,jnappy,ProfessorD,209.26,157.68
 BB4,3,jnappy,aledo,170.62,122.5
 BB4,8,jnappy,koolaid403,183.44,153.08
 BB4,2,jnappy,WestCoastNonsense,153.4,140.8
-BB4,13,jnappy,WestCoastNonsense,108.92,97.42
 BB4,10,jnappy,theBandit216,129.9,79.72
 BB4,11,jnappy,JeffMyers,193.64,154.08
 BB5,9,jnappy,theBandit216,163.02,135.62
@@ -224,12 +221,12 @@ BB1,9,jnappy,Mschmoopie,139.08,117.0
 BB1,10,jnappy,koolaid403,166.2,118.38
 BB1,7,jnappy,plfinken,138.1,101.46
 BB1,2,jnappy,aledo,220.46,159.32
-BB1,13,jnappy,aledo,130.9,130.88
 BB2,7,gpeisert1,ProfessorD,175.96,168.9
 BB2,5,gpeisert1,jnappy,181.02,165.72
 BB2,9,gpeisert1,theBandit216,152.1,130.32
 BB2,11,gpeisert1,ConorDeLa,181.1,116.58
 BB2,2,gpeisert1,Deerslayer65,141.72,134.26
+BB2,13,gpeisert1,Deerslayer65,129.84,126.02
 BB2,10,gpeisert1,ChiJV,144.66,76.44
 QuickDraft 1,1,Frank1983,ConorDeLa,159.58,154.06
 QuickDraft 1,8,Frank1983,ConorDeLa,194.98,156.72
@@ -240,6 +237,7 @@ QuickDraft 1,10,Frank1983,tford51,152.6,134.62
 QuickDraft 1,7,Frank1983,theBandit216,161.14,102.58
 Quickdraft 2,10,tford51,ProfessorD,167.32,129.42
 Quickdraft 2,5,tford51,aledo,150.44,143.72
+Quickdraft 2,13,tford51,ConorDeLa,184.18,174.4
 Quickdraft 2,2,tford51,WestCoastNonsense,209.04,140.38
 BB3,7,WestCoastNonsense,ProfessorD,130.62,118.5
 BB3,11,WestCoastNonsense,theBandit216,163.18,96.58
@@ -257,8 +255,9 @@ BB5,10,WestCoastNonsense,jnappy,124.18,86.72
 BB5,7,WestCoastNonsense,gpeisert1,151.74,144.92
 BB5,6,WestCoastNonsense,koolaid403,169.72,163.18
 BB5,2,WestCoastNonsense,Fordo45,162.66,155.72
-BB5,13,WestCoastNonsense,Fordo45,164.92,124.9
+BB5,13,WestCoastNonsense,Fordo45,184.32,161.6
 MainLeague,6,theBandit216,ChiJV,141.78,104.46
+MainLeague,13,theBandit216,WestCoastNonsense,188.26,183.44
 MainLeague,11,theBandit216,ConorDeLa,156.2,111.38
 MainLeague,7,theBandit216,tford51,118.04,104.78
 MainLeague,8,theBandit216,ProfessorD,176.02,128.64
@@ -277,6 +276,7 @@ QuickDraft 1,11,aledo,ConorDeLa,171.22,140.6
 QuickDraft 1,1,aledo,WestCoastNonsense,168.12,133.42
 QuickDraft 1,8,aledo,WestCoastNonsense,186.82,139.92
 QuickDraft 1,6,aledo,tford51,164.4,157.62
+QuickDraft 1,13,aledo,tford51,188.16,157.76
 QuickDraft 1,9,aledo,theBandit216,142.02,124.24
 Quickdraft 2,7,koolaid403,ProfessorD,183.92,148.0
 Quickdraft 2,1,koolaid403,aledo,181.78,143.16
@@ -284,7 +284,7 @@ Quickdraft 2,8,koolaid403,aledo,213.24,183.52
 Quickdraft 2,3,koolaid403,theBandit216,217.02,172.86
 Quickdraft 2,4,koolaid403,tford51,200.56,142.62
 Quickdraft 2,11,koolaid403,tford51,171.12,170.18
-Quickdraft 2,13,koolaid403,Frank1983,175.88,117.74
+Quickdraft 2,13,koolaid403,Frank1983,193.38,180.94
 Quickdraft 2,6,koolaid403,WestCoastNonsense,175.52,175.08
 BB3,6,jnappy,ProfessorD,160.4,80.16
 BB3,5,jnappy,tford51,194.56,168.02
@@ -293,7 +293,7 @@ BB3,10,jnappy,theBandit216,148.6,83.96
 BB3,1,jnappy,WestCoastNonsense,134.04,114.18
 BB3,9,jnappy,aledo,147.52,125.82
 BB3,2,jnappy,Deerslayer65,163.58,128.02
-BB3,13,jnappy,Deerslayer65,126.24,101.06
+BB3,13,jnappy,Deerslayer65,159.94,112.46
 BB3,11,jnappy,gpeisert1,148.88,102.96
 BB4,4,aledo,gpeisert1,134.52,111.0
 BB4,10,aledo,ConorDeLa,140.44,118.36
@@ -302,10 +302,10 @@ BB4,12,aledo,WestCoastNonsense,168.98,132.14
 BB4,9,aledo,theBandit216,158.42,122.14
 BB4,8,aledo,JeffMyers,211.44,173.4
 BB4,2,aledo,msbosway,169.76,133.82
-BB4,13,aledo,msbosway,116.28,108.92
 BB5,6,gpeisert1,ProfessorD,162.0,160.56
 BB5,3,gpeisert1,ConorDeLa,187.96,147.96
 BB5,2,gpeisert1,theBandit216,162.48,156.76
+BB5,13,gpeisert1,theBandit216,176.84,131.66
 BB5,4,gpeisert1,tford51,161.7,147.82
 BB5,10,gpeisert1,msbosway,165.26,151.5
 BB5,9,gpeisert1,Fordo45,146.62,105.44
@@ -315,7 +315,6 @@ MainLeague,11,tford51,CoryPeisert,167.76,155.82
 BB1,11,koolaid403,theBandit216,147.14,131.88
 BB1,1,koolaid403,ConorDeLa,168.7,151.84
 BB1,12,koolaid403,ConorDeLa,163.42,158.98
-BB1,13,koolaid403,tford51,137.96,89.26
 BB1,5,koolaid403,plfinken,183.86,91.98
 BB1,6,koolaid403,aledo,163.76,157.7
 BB2,12,koolaid403,ProfessorD,168.16,166.2
@@ -325,13 +324,11 @@ BB2,9,koolaid403,ConorDeLa,186.0,153.36
 BB2,7,koolaid403,Mschmoopie,186.06,114.16
 BB2,10,koolaid403,Deerslayer65,140.46,138.0
 BB2,2,koolaid403,tford51,181.88,159.72
-BB2,13,koolaid403,tford51,130.96,116.36
 BB2,8,koolaid403,ChiJV,162.64,159.78
 QuickDraft 1,1,tford51,ProfessorD,146.3,145.18
 QuickDraft 1,12,tford51,koolaid403,143.7,128.12
 QuickDraft 1,9,tford51,ConorDeLa,159.68,143.98
 QuickDraft 1,3,tford51,Frank1983,155.4,130.58
-QuickDraft 1,13,tford51,aledo,124.56,113.4
 Quickdraft 2,4,Frank1983,aledo,153.6,91.14
 Quickdraft 2,1,Frank1983,tford51,173.34,169.52
 Quickdraft 2,8,Frank1983,tford51,165.58,156.82
@@ -341,17 +338,16 @@ Quickdraft 2,10,Frank1983,WestCoastNonsense,131.24,108.9
 BB3,8,koolaid403,ConorDeLa,201.14,153.2
 BB3,7,koolaid403,theBandit216,142.06,99.16
 BB3,2,koolaid403,WestCoastNonsense,128.82,93.08
-BB3,13,koolaid403,WestCoastNonsense,122.62,74.22
+BB3,13,koolaid403,WestCoastNonsense,144.82,116.42
 BB3,3,koolaid403,jnappy,153.28,139.54
 BB3,4,koolaid403,aledo,159.02,111.64
 BB4,2,koolaid403,ProfessorD,195.96,150.04
-BB4,13,koolaid403,ProfessorD,145.42,115.06
 BB4,1,koolaid403,gpeisert1,171.84,129.28
 BB4,3,koolaid403,ConorDeLa,220.06,144.28
 BB4,5,koolaid403,aledo,179.52,157.5
 BB4,4,koolaid403,WestCoastNonsense,159.88,149.72
 BB4,6,koolaid403,theBandit216,158.3,156.66
-BB5,13,aledo,ProfessorD,136.04,130.54
+BB5,13,aledo,ProfessorD,179.54,153.3
 BB5,11,aledo,ConorDeLa,196.34,138.84
 BB5,10,aledo,theBandit216,129.78,93.8
 BB5,7,aledo,jnappy,140.46,122.7
@@ -367,11 +363,12 @@ MainLeague,2,ProfessorD,CoryPeisert,105.24,100.08
 BB1,6,ConorDeLa,ProfessorD,148.96,124.02
 BB1,9,ConorDeLa,gpeisert1,155.44,151.22
 BB1,11,ConorDeLa,jnappy,178.94,174.52
-BB1,13,ConorDeLa,Mschmoopie,170.1,142.56
+BB1,13,ConorDeLa,Mschmoopie,216.68,154.96
 BB1,4,ConorDeLa,plfinken,153.8,144.06
 BB1,7,ConorDeLa,aledo,173.7,151.84
 BB2,4,Mschmoopie,jnappy,168.72,166.14
 BB2,2,Mschmoopie,WestCoastNonsense,167.6,165.82
+BB2,13,Mschmoopie,WestCoastNonsense,192.36,189.08
 BB2,1,Mschmoopie,gpeisert1,161.34,137.78
 BB2,12,Mschmoopie,gpeisert1,194.12,79.46
 BB2,10,Mschmoopie,ConorDeLa,116.14,88.4
@@ -385,13 +382,12 @@ QuickDraft 1,11,theBandit216,tford51,178.62,129.04
 Quickdraft 2,1,WestCoastNonsense,ProfessorD,202.52,157.74
 Quickdraft 2,7,WestCoastNonsense,aledo,172.38,172.34
 Quickdraft 2,12,WestCoastNonsense,aledo,162.78,134.52
-Quickdraft 2,13,WestCoastNonsense,aledo,104.3,94.32
+Quickdraft 2,13,WestCoastNonsense,aledo,178.72,163.88
 Quickdraft 2,4,WestCoastNonsense,ConorDeLa,210.5,183.48
 Quickdraft 2,11,WestCoastNonsense,ConorDeLa,185.72,185.02
 Quickdraft 2,5,WestCoastNonsense,theBandit216,164.14,153.44
 Quickdraft 2,9,WestCoastNonsense,tford51,165.84,156.64
 Quickdraft 2,3,WestCoastNonsense,Frank1983,194.58,148.3
-BB3,13,Mschmoopie,ProfessorD,128.96,102.9
 BB3,1,Mschmoopie,tford51,170.2,154.42
 BB3,3,Mschmoopie,ConorDeLa,135.78,113.14
 BB3,8,Mschmoopie,theBandit216,168.28,150.76
@@ -402,13 +398,14 @@ BB3,7,Mschmoopie,aledo,141.5,127.16
 BB3,9,Mschmoopie,gpeisert1,173.64,129.04
 BB3,6,Mschmoopie,JeffMyers,177.22,172.06
 BB4,10,WestCoastNonsense,ProfessorD,133.7,132.34
+BB4,13,WestCoastNonsense,jnappy,149.7,142.06
 BB4,8,WestCoastNonsense,theBandit216,163.38,151.62
 BB4,9,WestCoastNonsense,JeffMyers,172.12,141.96
 BB5,9,Mschmoopie,ProfessorD,214.96,149.84
 BB5,6,Mschmoopie,ConorDeLa,182.66,159.84
 BB5,7,Mschmoopie,theBandit216,137.24,121.06
 BB5,2,Mschmoopie,jnappy,211.5,159.34
-BB5,13,Mschmoopie,jnappy,128.72,97.58
+BB5,13,Mschmoopie,jnappy,187.62,168.34
 BB5,8,Mschmoopie,WestCoastNonsense,166.34,146.34
 BB5,11,Mschmoopie,gpeisert1,151.78,117.78
 BB5,3,Mschmoopie,tford51,148.5,129.02
@@ -419,7 +416,7 @@ MainLeague,10,aledo,Mschmoopie,116.5,108.54
 MainLeague,3,aledo,theBandit216,157.68,96.96
 MainLeague,8,aledo,tford51,149.66,142.5
 MainLeague,11,aledo,ProfessorD,143.82,117.8
-MainLeague,13,aledo,koolaid403,130.14,117.78
+MainLeague,13,aledo,koolaid403,146.34,117.78
 BB1,12,ChiJV,gpeisert1,125.98,91.08
 BB1,3,ChiJV,WestCoastNonsense,210.12,139.16
 BB1,4,ChiJV,theBandit216,188.36,147.26
@@ -429,30 +426,30 @@ BB1,9,ChiJV,koolaid403,167.3,144.56
 BB1,8,ChiJV,ConorDeLa,183.64,152.16
 BB1,7,ChiJV,tford51,141.86,132.46
 BB1,2,ChiJV,plfinken,172.6,142.74
-BB1,13,ChiJV,plfinken,78.62,57.82
+BB1,13,ChiJV,plfinken,140.88,84.02
 BB1,11,ChiJV,aledo,174.98,163.28
 BB2,9,Deerslayer65,jnappy,127.5,122.7
 BB2,7,Deerslayer65,theBandit216,186.34,85.46
 BB2,1,Deerslayer65,WestCoastNonsense,174.5,103.16
 BB2,12,Deerslayer65,WestCoastNonsense,174.04,96.18
-BB2,13,Deerslayer65,gpeisert1,118.62,76.96
 BB2,6,Deerslayer65,aledo,191.92,137.5
 BB3,11,aledo,ProfessorD,181.2,84.7
 BB3,6,aledo,tford51,151.7,119.32
 BB3,10,aledo,ConorDeLa,111.34,71.08
 BB3,2,aledo,gpeisert1,163.96,122.04
-BB3,13,aledo,gpeisert1,178.06,74.5
+BB3,13,aledo,gpeisert1,210.92,130.4
 BB3,12,aledo,JeffMyers,174.32,116.1
 BB4,4,theBandit216,ProfessorD,143.3,133.04
 BB4,2,theBandit216,Mschmoopie,151.92,127.34
-BB4,13,theBandit216,Mschmoopie,127.52,108.66
+BB4,13,theBandit216,Mschmoopie,172.22,163.66
 BB5,8,tford51,theBandit216,197.9,160.78
 BB5,1,tford51,jnappy,183.0,168.02
 BB5,12,tford51,jnappy,139.2,124.76
 BB5,11,tford51,WestCoastNonsense,230.62,178.42
 BB5,6,tford51,aledo,192.0,133.5
-BB5,13,tford51,msbosway,132.16,118.88
+BB5,13,tford51,msbosway,218.0,186.48
 BB5,7,tford51,Fordo45,163.98,143.38
+MainLeague,13,plfinken,ChiJV,157.62,144.74
 MainLeague,9,plfinken,gpeisert1,158.26,150.96
 MainLeague,4,plfinken,WestCoastNonsense,166.22,116.4
 MainLeague,1,plfinken,ConorDeLa,114.26,79.0
@@ -463,6 +460,7 @@ MainLeague,11,plfinken,koolaid403,198.38,127.66
 BB1,10,tford51,WestCoastNonsense,127.56,126.54
 BB1,8,tford51,jnappy,170.84,167.78
 BB1,2,tford51,koolaid403,135.3,117.8
+BB1,13,tford51,koolaid403,172.6,160.86
 BB1,3,tford51,ConorDeLa,152.08,128.78
 BB1,11,tford51,plfinken,180.68,113.94
 BB2,1,tford51,jnappy,164.86,117.74
@@ -470,6 +468,7 @@ BB2,12,tford51,jnappy,162.06,161.4
 BB2,11,tford51,theBandit216,229.1,122.4
 BB2,4,tford51,gpeisert1,199.34,142.82
 BB2,7,tford51,ConorDeLa,153.96,146.92
+BB2,13,tford51,koolaid403,210.12,178.36
 BB2,5,tford51,Mschmoopie,162.26,123.86
 BB2,8,tford51,Deerslayer65,201.82,157.86
 BB2,6,tford51,ChiJV,184.72,138.7
@@ -481,14 +480,13 @@ BB3,10,Deerslayer65,Mschmoopie,153.92,137.66
 BB3,5,Deerslayer65,aledo,153.48,118.6
 BB3,4,Deerslayer65,JeffMyers,159.76,151.12
 BB4,5,JeffMyers,ProfessorD,204.54,154.42
-BB4,13,JeffMyers,tford51,102.52,88.2
 BB4,4,JeffMyers,ConorDeLa,203.1,167.64
 BB4,7,JeffMyers,koolaid403,178.04,166.38
 BB4,1,JeffMyers,theBandit216,179.18,162.02
 BB4,12,JeffMyers,theBandit216,156.18,120.08
 BB4,3,JeffMyers,Mschmoopie,190.64,156.6
 BB5,2,koolaid403,ConorDeLa,116.16,109.82
-BB5,13,koolaid403,ConorDeLa,118.64,87.82
+BB5,13,koolaid403,ConorDeLa,162.58,140.3
 BB5,3,koolaid403,theBandit216,212.5,141.4
 BB5,1,koolaid403,gpeisert1,164.44,154.48
 BB5,12,koolaid403,gpeisert1,149.0,99.42
@@ -509,7 +507,7 @@ BB2,3,ChiJV,theBandit216,182.8,119.68
 BB2,1,ChiJV,ConorDeLa,185.12,106.54
 BB2,12,ChiJV,ConorDeLa,135.64,78.1
 BB2,4,ChiJV,Deerslayer65,152.5,139.62
-BB2,13,ChiJV,aledo,88.5,76.68
+BB2,13,ChiJV,aledo,145.1,142.74
 BB3,8,gpeisert1,tford51,174.12,157.5
 BB3,6,gpeisert1,koolaid403,140.56,96.46
 BB3,7,gpeisert1,Deerslayer65,167.74,137.54
@@ -542,6 +540,7 @@ MainLeague,5,koolaid403,CoryPeisert,160.14,118.18
 BB1,12,aledo,ProfessorD,172.0,168.4
 BB1,10,aledo,gpeisert1,179.24,135.3
 BB1,3,aledo,theBandit216,206.82,123.84
+BB1,13,aledo,jnappy,232.1,150.16
 BB1,4,aledo,tford51,164.38,100.24
 BB2,5,aledo,ProfessorD,154.5,143.7
 BB2,11,aledo,jnappy,177.48,132.08
@@ -555,7 +554,7 @@ BB2,10,aledo,tford51,163.82,108.74
 BB2,2,aledo,ChiJV,167.16,131.6
 BB3,10,JeffMyers,ProfessorD,121.1,113.84
 BB3,11,JeffMyers,ConorDeLa,141.0,138.94
-BB3,13,JeffMyers,theBandit216,113.54,106.14
+BB3,13,JeffMyers,theBandit216,157.24,156.64
 BB3,9,JeffMyers,WestCoastNonsense,155.64,148.3
 BB3,8,JeffMyers,jnappy,176.44,166.96
 BB3,5,JeffMyers,koolaid403,177.16,109.56
@@ -565,6 +564,7 @@ BB4,7,msbosway,ProfessorD,153.86,142.16
 BB4,8,msbosway,gpeisert1,194.1,190.94
 BB4,1,msbosway,jnappy,168.74,155.62
 BB4,12,msbosway,jnappy,182.84,80.58
+BB4,13,msbosway,aledo,203.32,166.24
 BB4,9,msbosway,koolaid403,202.54,172.86
 BB4,3,msbosway,WestCoastNonsense,150.26,120.42
 BB4,11,msbosway,theBandit216,233.58,182.88
@@ -1627,28 +1627,28 @@ Quickdraft 2,12,MEDIAN,tford51,,
 Quickdraft 2,12,MEDIAN,koolaid403,,
 Quickdraft 2,12,Frank1983,MEDIAN,,
 Quickdraft 2,12,WestCoastNonsense,MEDIAN,,
-MainLeague,13,ChiJV,MEDIAN,,
+MainLeague,13,MEDIAN,ChiJV,,
 MainLeague,13,gpeisert1,MEDIAN,,
 MainLeague,13,WestCoastNonsense,MEDIAN,,
 MainLeague,13,MEDIAN,ConorDeLa,,
 MainLeague,13,MEDIAN,Mschmoopie,,
-MainLeague,13,MEDIAN,theBandit216,,
+MainLeague,13,theBandit216,MEDIAN,,
 MainLeague,13,MEDIAN,tford51,,
 MainLeague,13,ProfessorD,MEDIAN,,
-MainLeague,13,aledo,MEDIAN,,
-MainLeague,13,MEDIAN,plfinken,,
+MainLeague,13,MEDIAN,aledo,,
+MainLeague,13,plfinken,MEDIAN,,
 MainLeague,13,CoryPeisert,MEDIAN,,
 MainLeague,13,MEDIAN,koolaid403,,
 BB1,13,MEDIAN,ProfessorD,,
-BB1,13,gpeisert1,MEDIAN,,
-BB1,13,MEDIAN,WestCoastNonsense,,
-BB1,13,MEDIAN,theBandit216,,
-BB1,13,jnappy,MEDIAN,,
-BB1,13,Mschmoopie,MEDIAN,,
+BB1,13,MEDIAN,gpeisert1,,
+BB1,13,WestCoastNonsense,MEDIAN,,
+BB1,13,theBandit216,MEDIAN,,
+BB1,13,MEDIAN,jnappy,,
+BB1,13,MEDIAN,Mschmoopie,,
 BB1,13,koolaid403,MEDIAN,,
 BB1,13,ConorDeLa,MEDIAN,,
 BB1,13,MEDIAN,ChiJV,,
-BB1,13,MEDIAN,tford51,,
+BB1,13,tford51,MEDIAN,,
 BB1,13,MEDIAN,plfinken,,
 BB1,13,aledo,MEDIAN,,
 BB2,13,ProfessorD,MEDIAN,,
@@ -1659,59 +1659,59 @@ BB2,13,MEDIAN,gpeisert1,,
 BB2,13,MEDIAN,ConorDeLa,,
 BB2,13,koolaid403,MEDIAN,,
 BB2,13,Mschmoopie,MEDIAN,,
-BB2,13,Deerslayer65,MEDIAN,,
-BB2,13,MEDIAN,tford51,,
+BB2,13,MEDIAN,Deerslayer65,,
+BB2,13,tford51,MEDIAN,,
 BB2,13,MEDIAN,ChiJV,,
 BB2,13,MEDIAN,aledo,,
 BB3,13,MEDIAN,ProfessorD,,
 BB3,13,tford51,MEDIAN,,
-BB3,13,MEDIAN,ConorDeLa,,
-BB3,13,MEDIAN,theBandit216,,
+BB3,13,ConorDeLa,MEDIAN,,
+BB3,13,theBandit216,MEDIAN,,
 BB3,13,MEDIAN,WestCoastNonsense,,
 BB3,13,jnappy,MEDIAN,,
-BB3,13,koolaid403,MEDIAN,,
-BB3,13,Mschmoopie,MEDIAN,,
+BB3,13,MEDIAN,koolaid403,,
+BB3,13,MEDIAN,Mschmoopie,,
 BB3,13,aledo,MEDIAN,,
 BB3,13,MEDIAN,Deerslayer65,,
 BB3,13,MEDIAN,gpeisert1,,
 BB3,13,JeffMyers,MEDIAN,,
-BB4,13,ProfessorD,MEDIAN,,
+BB4,13,MEDIAN,ProfessorD,,
 BB4,13,gpeisert1,MEDIAN,,
-BB4,13,MEDIAN,tford51,,
+BB4,13,tford51,MEDIAN,,
 BB4,13,MEDIAN,jnappy,,
-BB4,13,ConorDeLa,MEDIAN,,
+BB4,13,MEDIAN,ConorDeLa,,
 BB4,13,aledo,MEDIAN,,
-BB4,13,koolaid403,MEDIAN,,
+BB4,13,MEDIAN,koolaid403,,
 BB4,13,MEDIAN,WestCoastNonsense,,
 BB4,13,theBandit216,MEDIAN,,
-BB4,13,MEDIAN,JeffMyers,,
+BB4,13,JeffMyers,MEDIAN,,
 BB4,13,MEDIAN,Mschmoopie,,
-BB4,13,MEDIAN,msbosway,,
-BB5,13,ProfessorD,MEDIAN,,
+BB4,13,msbosway,MEDIAN,,
+BB5,13,MEDIAN,ProfessorD,,
 BB5,13,MEDIAN,ConorDeLa,,
 BB5,13,MEDIAN,theBandit216,,
 BB5,13,MEDIAN,jnappy,,
 BB5,13,WestCoastNonsense,MEDIAN,,
-BB5,13,MEDIAN,gpeisert1,,
+BB5,13,gpeisert1,MEDIAN,,
 BB5,13,aledo,MEDIAN,,
 BB5,13,Mschmoopie,MEDIAN,,
 BB5,13,tford51,MEDIAN,,
 BB5,13,MEDIAN,koolaid403,,
-BB5,13,MEDIAN,msbosway,,
-BB5,13,Fordo45,MEDIAN,,
-QuickDraft 1,13,ProfessorD,MEDIAN,,
+BB5,13,msbosway,MEDIAN,,
+BB5,13,MEDIAN,Fordo45,,
+QuickDraft 1,13,MEDIAN,ProfessorD,,
 QuickDraft 1,13,koolaid403,MEDIAN,,
 QuickDraft 1,13,ConorDeLa,MEDIAN,,
 QuickDraft 1,13,MEDIAN,WestCoastNonsense,,
-QuickDraft 1,13,Frank1983,MEDIAN,,
-QuickDraft 1,13,MEDIAN,aledo,,
-QuickDraft 1,13,MEDIAN,tford51,,
+QuickDraft 1,13,MEDIAN,Frank1983,,
+QuickDraft 1,13,aledo,MEDIAN,,
+QuickDraft 1,13,tford51,MEDIAN,,
 QuickDraft 1,13,MEDIAN,theBandit216,,
 Quickdraft 2,13,MEDIAN,ProfessorD,,
 Quickdraft 2,13,MEDIAN,aledo,,
-Quickdraft 2,13,ConorDeLa,MEDIAN,,
-Quickdraft 2,13,theBandit216,MEDIAN,,
+Quickdraft 2,13,MEDIAN,ConorDeLa,,
+Quickdraft 2,13,MEDIAN,theBandit216,,
 Quickdraft 2,13,tford51,MEDIAN,,
 Quickdraft 2,13,koolaid403,MEDIAN,,
-Quickdraft 2,13,MEDIAN,Frank1983,,
-Quickdraft 2,13,MEDIAN,WestCoastNonsense,,
+Quickdraft 2,13,Frank1983,MEDIAN,,
+Quickdraft 2,13,WestCoastNonsense,MEDIAN,,
