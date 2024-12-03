@@ -81,7 +81,7 @@ def calculate_standings(df_results):
 if __name__ == '__main__':
     latest_week = run_query_scalar("select max(week) from matchups")+1
     INFO(f'Updating matchups for week {latest_week}')
-    update_weekly_matchups(latest_week, drop_table=False)
+    update_weekly_matchups(latest_week, drop_table=True)
 
     df_outcomes = run_query('''
     SELECT r1.league_name, m1.week, r1.coach_name as 'Winner', r2.coach_name as 'Loser', m1.points, m2.points
