@@ -73,7 +73,8 @@ def calculate_standings(df_results):
         # filter out "MEDIAN"
         df_wins = df_wins[df_wins.index != 'MEDIAN']
         
-        df_wins.to_csv(DATA_PATH/f'standings/league_{l}.csv', index=True, index_label='Team')
+        league_name = l.replace(' ','_')
+        df_wins.to_csv(DATA_PATH/f'standings/league_{league_name}.csv', index=True, index_label='Team')
     
     
     
