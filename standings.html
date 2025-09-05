@@ -52,8 +52,9 @@
                 'league_BB3.csv',
                 'league_BB4.csv',
                 'league_BB5.csv',
-                'league_QuickDraft_1.csv',
-                //'league_QuickDraft_2.csv',
+                'league_QuickDraft_AFC_v_NFC.csv',
+                'league_QuickDraft_Rookies_v_Vets.csv',
+                'league_QuickDraft_WR_RB.csv',
             ];
 
             function loadCSVFiles() {
@@ -135,6 +136,10 @@
                     return team;
                 });
 
+                // Highlight the top half of the rows for non-QuickDraft leagues
+                const totalRows = standingsData.length;
+                const topTeams = Math.floor(totalRows / 2);
+                
                 // Sort by Win_Percentage first, then by Total Points
                 standingsData.sort((a, b) => {
                     if (b['Win_Percentage'] !== a['Win_Percentage']) {
@@ -154,14 +159,10 @@
                         <td>${team['Total Points'] || 'N/A'}</td>
                     `;
 
-                    // Highlight the sixth row of each table
-                    if (!leagueName.trim().startsWith('QuickDraft') && index <= 5) {
+                    /// Highlight the teams that are in the playoffs
+                    if (index < topTeams) {
                         row.classList.add('highlighted-row');
                     }
-                    if (leagueName.trim().startsWith('QuickDraft')) {
-                        row.classList.add('highlighted-row');
-                    }
-
                     tableBody.appendChild(row);
                 });
 
