@@ -81,8 +81,8 @@ def calculate_standings(df_results):
 if __name__ == '__main__':
     # Running the first week of a new season, need to clear out last season, so set the latest week to 1
     # This will drop the table and then ensure that we are only working on the new matchups
-    #latest_week = run_query_scalar("select max(week) from matchups")+1
-    latest_week = 1
+    latest_week = run_query_scalar("select max(week) from matchups")+1
+    #latest_week = 1
     INFO(f'Updating matchups for week {latest_week}')
     update_weekly_matchups(latest_week, drop_table=True)
 
