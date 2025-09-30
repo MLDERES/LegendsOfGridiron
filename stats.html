@@ -73,20 +73,33 @@
                         y: players,
                         text: text,
                         type: "heatmap",
-                        colorscale: "Blues",
                         zmin: 0,
                         zmax: 1,
                         hoverinfo: "text+z",
                         texttemplate: "%{text}",
-                        textfont: { color: "black" }
-                    };
+                        textfont: { size: 10, color: "black" },
+                        colorscale: "RdYlGn",
+                        showscale: false
+                    }
 
                     const layout = {
                         title: "Win % from Row Player’s Perspective",
-                        xaxis: { side: "top", title: "Opponent (Column)" },
+                        xaxis: { side: "top", title: "Opponent (Column)", tickangle: -45 },
                         yaxis: { autorange: "reversed", title: "Row Player" },
-                        margin: { t: 120 }
+                        margin: { t: 120 },
+                        autosize: false,
+                        width: 1200,   // make it wider
+                        height: 1200,  // and taller
                     };
+
+                    for (let i = 0; i < z.length; i++) {
+                        for (let j = 0; j < z[i].length; j++) {
+                            if (i > j) {  // lower triangle
+                                z[i][j] = null;
+                                text[i][j] = "";
+                            }
+                        }
+                    }
 
                     Plotly.newPlot("heatmap", [trace], layout);
                 });
