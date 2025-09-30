@@ -76,13 +76,44 @@ def calculate_standings(df_results):
         league_name = l.replace(' ','_')
         df_wins.to_csv(DATA_PATH/f'standings/league_{league_name}.csv', index=True, index_label='Team')
     
-    
+def build_head_head_matrix(df):
+    # Filter out pseudo matches
+    df = df[(df["Winner"] != "MEDIAN") & (df["Loser"] != "MEDIAN")]
+
+    wins = df.groupby(["Winner","Loser"]).size().unstack(fill_value=0)
+    players = sorted(set(df["Winner"]) | set(df["Loser"]))
+    wins = wins.reindex(index=players, columns=players, fill_value=0)
+    losses = wins.T
+    games = wins + losses
+
+    # win% = row player’s win rate vs col player
+    win_pct = wins.divide(games).astype(float)
+
+    # W–L record strings
+    records = wins.astype(str) + "-" + losses.astype(str)
+
+    # Clean diagonal (self vs self)
+    for p in players:
+        win_pct.loc[p, p] = None
+        records.loc[p, p] = ""
+
+    # Convert DataFrames → Python lists (force object dtype so None stays None)
+    heatmap_data = {
+        "players": players,
+        "win_pct": win_pct.astype(object).where(pd.notnull(win_pct), None).to_numpy().tolist(),
+        "records": records.astype(object).where(pd.notnull(records), "").to_numpy().tolist()
+    }
+
+    # Export JSON safely
+    with open(DATA_PATH / "heatmap_data.json", "w") as f:
+        json.dump(heatmap_data, f, allow_nan=False)
+
     
 if __name__ == '__main__':
     # Running the first week of a new season, need to clear out last season, so set the latest week to 1
     # This will drop the table and then ensure that we are only working on the new matchups
     latest_week = run_query_scalar("select max(week) from matchups")+1
-    #latest_week = 1
+    #latest_week = 3
     INFO(f'Updating matchups for week {latest_week}')
     update_weekly_matchups(latest_week, drop_table=True)
 
@@ -116,3 +147,7 @@ if __name__ == '__main__':
     # Now update the standings
     INFO('Calculating Standings')
     calculate_standings(df_results)
+    
+    # Now build the head to head matrix
+    INFO('Building Head to Head Matrix')
+    build_head_head_matrix(df_results)

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matchup Data</title>
+    <script src="https://cdn.plot.ly/plotly-3.1.0.js"></script>
 
     <!-- Link to your site's global CSS file for consistency -->
     <link rel="stylesheet" href="static/css/styles.css">
@@ -49,7 +50,48 @@
         <p>For the overall standings by league <a href="standings.html">see this page</a></p>
     </section>
 
+    <section class="stats">
+        <h2>Head to Head Matchups</h2>
+        <p>This is a breakdown of how each team has done against every other team.  The number in each cell is the
+            win-loss record for the team in that row against the team in that column.  For example, if Team A is in row 1
+            and Team B is in column 2, and the cell at (1,2) shows "3-1", that means Team A has beaten Team B three times
+            and lost once.
+        </p>
+        <div id="heatmap"></div>
+        
+        <script>
+            fetch("data/heatmap_data.json")
+                .then(resp => resp.json())
+                .then(data => {
+                    const players = data.players;
+                    const z = data.win_pct;    // row perspective win%
+                    const text = data.records; // "W-L" strings
 
+                    const trace = {
+                        z: z,
+                        x: players,
+                        y: players,
+                        text: text,
+                        type: "heatmap",
+                        colorscale: "Blues",
+                        zmin: 0,
+                        zmax: 1,
+                        hoverinfo: "text+z",
+                        texttemplate: "%{text}",
+                        textfont: { color: "black" }
+                    };
+
+                    const layout = {
+                        title: "Win % from Row Player’s Perspective",
+                        xaxis: { side: "top", title: "Opponent (Column)" },
+                        yaxis: { autorange: "reversed", title: "Row Player" },
+                        margin: { t: 120 }
+                    };
+
+                    Plotly.newPlot("heatmap", [trace], layout);
+                });
+        </script>
+    </section>
 
     <!-- New Table for Opponent Breakdown -->
     <section class="stats" >
@@ -69,8 +111,9 @@
                 <!-- Opponent breakdown data will be inserted by JavaScript -->
             </tbody>
         </table>
-    </section>
 
+
+    </section>
     <!-- Footer from your site -->
     <footer>
         <!-- Add footer content similar to the front page -->
